@@ -30,7 +30,7 @@
     </div>
   </div>
 </nav>
-
+<div class="spacer"></div>
 <slot />
 
 <footer class="text-center text-lg-start">
@@ -120,6 +120,9 @@
   </footer>
 
 <style lang=scss>
+    .spacer {
+        padding-bottom: 7rem;
+    }
     footer {
         background-color: #131313 !important;
         a {
