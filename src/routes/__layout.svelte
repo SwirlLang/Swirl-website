@@ -23,7 +23,7 @@
         <a class="nav-link" href="/download">download</a>
         <a class="nav-link" href="/docs">docs</a>
         <div class="social d-flex align-items-center">
-            <a class="nav-link" href="https://github.com/Lambda-Code-Organization/Lambda-Code"><i class="fab fa-github"></i></a>
+            <a class="nav-link" href="https://github.com/LC-Lang/Lambda-Code"><i class="fab fa-github"></i></a>
             <a class="nav-link" href="https://discord.gg/RSJ5TUDdqx"><i class="fab fa-discord"></i></a>
         </div>
       </div>

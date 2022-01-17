@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-875a765f.js",
+    "file": "start-fdefa455.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -8,13 +8,13 @@
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
-      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/__error.svelte",
       "src/routes/index.svelte",
       "src/routes/about/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-fab62830.js",
+    "file": "pages/__layout.svelte-d4616d6b.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -25,13 +25,17 @@
       "assets/pages/__layout.svelte-b4877d31.css"
     ]
   },
-  ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-35b19203.js",
-    "src": ".svelte-kit/runtime/components/error.svelte",
+  "src/routes/__error.svelte": {
+    "file": "pages/__error.svelte-f95a5a9c.js",
+    "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-d5bff233.js"
+      "_vendor-d5bff233.js",
+      "_Spacer-6850f7d5.js"
+    ],
+    "css": [
+      "assets/pages/__error.svelte-d526a126.css"
     ]
   },
   "src/routes/index.svelte": {
@@ -47,18 +51,25 @@
     ]
   },
   "src/routes/about/index.svelte": {
-    "file": "pages/about/index.svelte-c1cc3b6d.js",
+    "file": "pages/about/index.svelte-7c5ae21d.js",
     "src": "src/routes/about/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-d5bff233.js"
-    ],
-    "css": [
-      "assets/pages/about/index.svelte-0eef0a39.css"
+      "_vendor-d5bff233.js",
+      "_Spacer-6850f7d5.js"
     ]
   },
   "_vendor-d5bff233.js": {
     "file": "chunks/vendor-d5bff233.js"
+  },
+  "_Spacer-6850f7d5.js": {
+    "file": "chunks/Spacer-6850f7d5.js",
+    "imports": [
+      "_vendor-d5bff233.js"
+    ],
+    "css": [
+      "assets/Spacer-25e7580c.css"
+    ]
   }
 }
