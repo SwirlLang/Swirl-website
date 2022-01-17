@@ -30,7 +30,6 @@
     </div>
   </div>
 </nav>
-<div class="spacer"></div>
 <slot />
 
 <footer class="text-center text-lg-start">
@@ -44,16 +43,16 @@
   
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-dark">About</a>
+              <a href="/about" class="text-dark">About</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Contact</a>
+              <a href="/contact" class="text-dark">Contact</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Privacy Policy</a>
+              <a href="/privacy-policy" class="text-dark">Privacy Policy</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Terms of service</a>
+              <a href="/terms-of-service" class="text-dark">Terms of service</a>
             </li>
           </ul>
         </div>
@@ -63,16 +62,16 @@
   
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-dark">Linux</a>
+              <a href="/download/linux" class="text-dark">Linux</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Windows</a>
+              <a href="/download/windows" class="text-dark">Windows</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Source Code</a>
+              <a href="/download/source code" class="text-dark">Source Code</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">All downloads</a>
+              <a href="/download" class="text-dark">All downloads</a>
             </li>
           </ul>
         </div>
@@ -84,10 +83,10 @@
   
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-dark">Docs</a>
+              <a href="/docs" class="text-dark">Docs</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Getting started</a>
+              <a href="/docs#getting-started" class="text-dark">Getting started</a>
             </li>
           </ul>
         </div>
@@ -120,9 +119,6 @@
   </footer>
 
 <style lang=scss>
-    .spacer {
-        padding-bottom: 7rem;
-    }
     footer {
         background-color: #131313 !important;
         a {
@@ -133,7 +129,7 @@
         width:100vw;
         position: fixed;
         font-family: roboto;
-        font-weight: 500;
+        font-weight: 450;
 
         background-color: #131313 !important;
         i {
@@ -147,7 +143,7 @@
             }
         }
         .nav-link {
-            padding: .3rem 1.3rem;
+            padding: .3rem 1rem;
         }
         .social {
             a {
