@@ -1,1 +1,5 @@
 /* global styles are written here, in SCSS syntax. Variables and mixins from the src/variables.scss file are automatically imported*/
+body {
+  background-color: $bg-color !important;
+  color:$fg-color !important;
+}
