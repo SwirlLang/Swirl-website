@@ -16,15 +16,9 @@
         </div>
     </div>
 </div>
-<div class="container text-center mt-3">
-    <h1>Welcome to Lambda Code</h1>
-    <p>Yet another programming language</p>
-    <a href="https://github.com/Lambda-Code-Organization/Lambda-Code" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a><br>
-    <sub>Check github for more info</sub>
-</div>
 <style lang=scss>
     .hero {
-        height: calc(100vh - 9vh);
+        height: 100vh;
         background: linear-gradient(90deg, #060B29 0%, #220B34 100%);
     }
 </style>
