@@ -2,6 +2,6 @@
 
 <style>
     .spacer {
-        padding-bottom: 5rem;
+        padding-bottom: 7rem;
     }
 </style>
