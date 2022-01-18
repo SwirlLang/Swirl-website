@@ -32,7 +32,7 @@
 </nav>
 <slot />
 
-<footer class="text-center text-lg-start">
+<footer class="text-start text-sm-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-4">
       <!--Grid row-->
@@ -83,7 +83,7 @@
   
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="/docs" class="text-dark">Docs</a>
+              <a href="http://localhost:3000/docs" class="text-dark">Docs</a>
             </li>
             <li>
               <a href="/docs#getting-started" class="text-dark">Getting started</a>
@@ -98,10 +98,13 @@
   
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-dark">GitHub Issues</a>
+              <a href="https://github.com/LC-Lang/Lambda-Code/issues" class="text-dark">GitHub Issues</a>
             </li>
             <li>
-              <a href="#!" class="text-dark">Forum</a>
+              <a href="https://github.com/LC-Lang/Lambda-Code/discussions" class="text-dark">Forum</a>
+            </li>
+            <li>
+              <a href="https://discord.gg/RSJ5TUDdqx" class="text-dark">Discord support server</a>
             </li>
           </ul>
         </div>
@@ -113,12 +116,15 @@
   
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright <a class="text-dark" href="https://github.com/MrinmoyHaloi/">Mrinmoy Haloi</a>
+      © 2022 Copyright <a class="text-dark" href="https://github.com/MrinmoyHaloi">Mrinmoy Haloi</a>
     </div>
     <!-- Copyright -->
   </footer>
 
 <style lang=scss>
+    a:hover {
+        color:#bbbbbb !important;
+    }
     footer {
         background-color: #131313 !important;
         a {
@@ -129,7 +135,7 @@
         width:100vw;
         position: fixed;
         font-family: roboto;
-        font-weight: 450;
+        font-weight: 400;
 
         background-color: #131313 !important;
         i {
@@ -139,7 +145,7 @@
             color:white !important;
             font-size: 1.4em;
             &:hover {
-                color:#d8d8d8 !important;
+                color:#bbbbbb !important;
             }
         }
         .nav-link {
@@ -147,15 +153,12 @@
         }
         .social {
             a {
-                padding: .5rem 1rem;
+                padding: .5rem .9rem;
                 font-size: 1em;
             }
             .nav-link:hover{
-                .fa-discord {
-                    color:#7a83e7;
-                }
-                .fa-github {
-                    color:#d8d8d8;
+                i {
+                    color:#bbbbbb;
                 }
             }
         }
