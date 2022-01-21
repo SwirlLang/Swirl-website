@@ -15,8 +15,8 @@
         <div class="col d-flex flex-column align-items-center mt-md-0 mt-4 align-items-md-center justify-content-md-center">
             <DownloadBtn content="Download Lambda Code" subtitle="linux, windows, mac os" link="/download"/>
             <div class="mt-2 docs-links">
-                <a href="https://lc-lang.github.io/docs/#getting-started">get started <i class="fas fa-external-link-alt me-1"></i></a>
-                <a href="/docs/examples">examples <i class="fas fa-external-link-alt"></i></a>
+                <a rel="external" href="docs/#getting-started">get started <i class="fas fa-external-link-alt me-1"></i></a>
+                <a rel="external" href="/docs/examples">examples <i class="fas fa-external-link-alt"></i></a>
             </div>
         </div>
     </div>

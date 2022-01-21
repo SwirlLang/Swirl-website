@@ -26,7 +26,7 @@
         <a class="nav-link" href="/">Home</a>
         <a class="nav-link" href="/about">about</a>
         <a class="nav-link" href="/download">download</a>
-        <a class="nav-link" href="https://lc-lang.github.io/docs/">docs</a>
+        <a class="nav-link" rel="external" href="/docs/">docs</a>
         <div class="social d-flex align-items-center">
             <a class="nav-link" href="https://github.com/LC-Lang/Lambda-Code"><i class="fab fa-github"></i></a>
             <a class="nav-link" href="https://discord.gg/RSJ5TUDdqx"><i class="fab fa-discord"></i></a>
@@ -88,10 +88,10 @@
   
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="https://lc-lang.github.io/docs/" class="text-dark">Docs</a>
+              <a rel="external" href="/docs" class="text-dark">Docs</a>
             </li>
             <li>
-              <a href="https://lc-lang.github.io/docs/#getting-started" class="text-dark">Getting started</a>
+              <a rel="external" href="/docs/#getting-started" class="text-dark">Getting started</a>
             </li>
           </ul>
         </div>
