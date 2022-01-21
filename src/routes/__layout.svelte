@@ -1,11 +1,16 @@
 <script>
   import "../app.scss";
-  import "../app.scss";
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="ps-3 navbar-brand" href="/">Lambda Code</a>
+    <a class="ps-3 navbar-brand" href="/"><img
+        src="favicon.svg"
+        class="me-2"
+        height="37"
+        alt="Lambda Code Logo"
+        loading="lazy"
+      />Lambda Code</a>
     <button
       class="navbar-toggler pe-3"
       type="button"
@@ -21,7 +26,7 @@
         <a class="nav-link" href="/">Home</a>
         <a class="nav-link" href="/about">about</a>
         <a class="nav-link" href="/download">download</a>
-        <a class="nav-link" href="/docs">docs</a>
+        <a class="nav-link" href="https://lc-lang.github.io/docs/">docs</a>
         <div class="social d-flex align-items-center">
             <a class="nav-link" href="https://github.com/LC-Lang/Lambda-Code"><i class="fab fa-github"></i></a>
             <a class="nav-link" href="https://discord.gg/RSJ5TUDdqx"><i class="fab fa-discord"></i></a>
@@ -83,10 +88,10 @@
   
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="http://localhost:3000/docs" class="text-dark">Docs</a>
+              <a href="https://lc-lang.github.io/docs/" class="text-dark">Docs</a>
             </li>
             <li>
-              <a href="/docs#getting-started" class="text-dark">Getting started</a>
+              <a href="https://lc-lang.github.io/docs/#getting-started" class="text-dark">Getting started</a>
             </li>
           </ul>
         </div>
@@ -104,7 +109,7 @@
               <a href="https://github.com/LC-Lang/Lambda-Code/discussions" class="text-dark">Forum</a>
             </li>
             <li>
-              <a href="https://discord.gg/RSJ5TUDdqx" class="text-dark">Discord support server</a>
+              <a href="https://discord.gg/RSJ5TUDdqx" class="text-dark">Discord server</a>
             </li>
           </ul>
         </div>
@@ -135,7 +140,7 @@
         width:100vw;
         position: fixed;
         font-family: roboto;
-        font-weight: 400;
+        font-weight: 500;
 
         background-color: #131313 !important;
         i {
@@ -149,7 +154,7 @@
             }
         }
         .nav-link {
-            padding: .3rem 1rem;
+            padding: .3rem .7rem;
         }
         .social {
             a {

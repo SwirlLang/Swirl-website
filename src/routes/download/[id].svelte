@@ -13,7 +13,12 @@
 </script>
 <Spacer />
 <div class="container text-center">
-    <h2>You are looking at the download page of {params.id}</h2>
+    {#if params.id == "source code"}
+    <h2>Download lambda code {params.id}</h2>
+    {:else}
+    <h2>Download lambda code for {params.id}</h2>
+    {/if}
+    <p>coming soon</p>
 </div>
 <Spacer/>
 <Spacer/>

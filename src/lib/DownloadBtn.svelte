@@ -4,7 +4,7 @@
     export let subtitle;
 </script>
 
-<a class="download-btn btn text-end btn-outline-1 me-md-5" href="{link}" data-mdb-ripple-color="dark">
+<a class="download-btn btn text-center btn-outline-1 me-md-5 text-md-end" href="{link}" data-mdb-ripple-color="dark">
     <h6>{content}</h6>
     <sub>{subtitle}</sub>
 </a>
