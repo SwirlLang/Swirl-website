@@ -1,21 +1,23 @@
 {
-  "name": "lambda-website",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-static": "next",
-    "@sveltejs/kit": "next",
-    "autoprefixer": "^10.4.2",
-    "cssnano": "^5.0.15",
-    "postcss": "^8.4.5",
-    "sass": "^1.46.0",
-    "svelte": "^3.44.0",
-    "svelte-preprocess": "^4.10.1"
-  },
-  "type": "module"
+    "name": "lambda-website",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "package": "svelte-kit package",
+        "preview": "svelte-kit preview"
+    },
+    "devDependencies": {
+        "@sveltejs/adapter-static": "next",
+        "@sveltejs/kit": "next",
+        "autoprefixer": "^10.4.2",
+        "cssnano": "^5.0.15",
+        "postcss": "^8.4.5",
+        "prettier": "^2.5.1",
+        "prettier-plugin-svelte": "^2.6.0",
+        "sass": "^1.49.0",
+        "svelte": "^3.44.0",
+        "svelte-preprocess": "^4.10.2"
+    },
+    "type": "module"
 }

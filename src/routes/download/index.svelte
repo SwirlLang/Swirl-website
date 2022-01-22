@@ -1,6 +1,7 @@
 <script>
-    import Spacer from "$lib/Spacer.svelte"
+    import Spacer from "$lib/Spacer.svelte";
 </script>
+
 <Spacer />
 <div class="container text-center">
     <h1>Download</h1>
@@ -14,11 +15,11 @@
         </div>
     </div>
 </div>
-<Spacer/>
-<Spacer/>
+<Spacer />
+<Spacer />
 
-<style lang=scss>
+<style lang="scss">
     a:hover {
-        color:#bbbbbb !important;
+        color: #bbbbbb !important;
     }
 </style>
