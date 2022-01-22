@@ -24,9 +24,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/about">about</a>
-        <a class="nav-link" href="/download">download</a>
-        <a class="nav-link" rel="external" href="/docs/">docs</a>
+        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="/download">Download</a>
+        <a class="nav-link" rel="external" href="/docs/">Docs</a>
         <div class="social d-flex align-items-center">
             <a class="nav-link" href="https://github.com/LC-Lang/Lambda-Code"><i class="fab fa-github"></i></a>
             <a class="nav-link" href="https://discord.gg/RSJ5TUDdqx"><i class="fab fa-discord"></i></a>
