@@ -135,9 +135,6 @@
 </footer>
 
 <style lang="scss">
-    a:hover {
-        color: #bbbbbb !important;
-    }
     footer {
         background-color: #131313 !important;
         a {
@@ -148,7 +145,7 @@
         width: 100vw;
         position: fixed;
         font-family: roboto;
-        font-weight: 500;
+        font-weight: 400;
 
         background-color: #131313 !important;
         i {
