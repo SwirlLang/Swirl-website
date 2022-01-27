@@ -48,17 +48,24 @@
                 <div class="col feature mb-4">
                     <i class="fas fa-rocket mb-3" />
                     <p>Speed</p>
-                    <p style="font-weight: 300;">Fly high with a runtime speed as fast as C++</p>
+                    <p style="font-weight: 300;">
+                        Fly high with a runtime speed as fast as C++
+                    </p>
                 </div>
                 <div class="col feature mb-4">
                     <i class="fas fa-code mb-3" />
                     <p>Syntax</p>
-                    <p style="font-weight: 300;">Develop faster with a clean and high level syntax</p>
+                    <p style="font-weight: 300;">
+                        Develop faster with a clean and high level syntax
+                    </p>
                 </div>
                 <div class="col feature">
                     <i class="fas fa-book mb-3" />
                     <p>Std Lib</p>
-                    <p style="font-weight: 300;">Feel powerful with the diverse set of standard libraries.</p>
+                    <p style="font-weight: 300;">
+                        Feel powerful with the diverse set of standard
+                        libraries.
+                    </p>
                 </div>
                 <div class="col feature">
                     <i class="fas fa-microchip mb-3" />

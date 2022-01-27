@@ -1,1 +1,0 @@
-import{S as l,i as c,s as i,e as o,c as d,a as h,d as a,b as p,g as _,L as t}from"./vendor-29faeeda.js";function m(r){let e;return{c(){e=o("div"),this.h()},l(s){e=d(s,"DIV",{class:!0}),h(e).forEach(a),this.h()},h(){p(e,"class","spacer svelte-1jqt49o")},m(s,n){_(s,e,n)},p:t,i:t,o:t,d(s){s&&a(e)}}}class f extends l{constructor(e){super();c(this,e,null,m,i,{})}}export{f as S};

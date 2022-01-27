@@ -2,7 +2,7 @@
     import "../app.scss";
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="ps-3 navbar-brand" href="/"
             ><img
@@ -142,8 +142,6 @@
         }
     }
     nav {
-        width: 100vw;
-        position: fixed;
         font-family: roboto;
         font-weight: 400;
 
