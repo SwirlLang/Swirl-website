@@ -22,12 +22,12 @@
             <i class="fas fa-bars" />
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto me-3">
+            <div class="navbar-nav ms-auto me-3 text-center">
                 <a class="nav-link" href="/">Home</a>
                 <a class="nav-link" href="/about">about</a>
                 <a class="nav-link" href="/download">download</a>
                 <a class="nav-link" rel="external" href="/docs/">docs</a>
-                <div class="social d-flex align-items-center">
+                <div class="social d-flex align-items-center justify-content-center">
                     <a
                         class="nav-link"
                         href="https://github.com/LC-Lang/Lambda-Code"
@@ -41,10 +41,10 @@
 </nav>
 <slot />
 
-<footer class="text-start">
-    <div class="container-sm container-fluid p-4">
+<footer>
+    <div class="container-sm container-fluid p-5 text-center text-lg-start">
         <div class="row">
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
                 <h5>Lambda Code</h5>
 
                 <ul class="list-unstyled mb-0">
@@ -64,7 +64,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
                 <h5>Download</h5>
 
                 <ul class="list-unstyled">
@@ -85,7 +85,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
                 <h5>Resources</h5>
 
                 <ul class="list-unstyled mb-0">
@@ -102,7 +102,7 @@
                 </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="col-lg-3 col-sm-6 mb-4 mb-md-0">
                 <h5>Support</h5>
 
                 <ul class="list-unstyled">

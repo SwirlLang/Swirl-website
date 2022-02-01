@@ -3,4 +3,5 @@ body {
     font-family: roboto;
     background-color: $bg-color !important;
     color: $fg-color !important;
+    overflow-x: hidden;
 }
