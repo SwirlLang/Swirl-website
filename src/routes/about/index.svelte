@@ -13,7 +13,7 @@
             github: "NeuralBruhh",
         },
         {
-            name: "Dart",
+            name: "In-diaonic",
             tagline: "Core dev",
             github: "In-diaonic",
         },
