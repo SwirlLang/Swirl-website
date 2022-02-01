@@ -42,7 +42,7 @@
             </div>
         </div>
         <div
-            class="d-flex flex-column align-items-center mt-md-0 mt-4 align-items-md-center justify-content-md-center">
+            class="d-flex flex-column align-items-center mt-lg-0 mt-4 align-items-md-center justify-content-md-center">
             <div
                 class="mt-2 row row-cols-sm-2 row-cols-1 text-center text-lg-start px-3">
                 <div class="col feature mb-4">
