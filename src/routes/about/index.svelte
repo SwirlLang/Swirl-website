@@ -31,7 +31,7 @@
 <Spacer />
 <div class="container text-center">
     <h1>About</h1>
-    <p style="font-size:1.5em" class="col-8 mx-auto">
+    <p style="font-size:1.5em; max-width:40rem" class="mx-auto">
         Lambda code is a high level, compiled, statically typed, object-oriented
         programming language.
     </p>

@@ -19,24 +19,24 @@
         rel="stylesheet"
         />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-	<link rel="modulepreload" href="/_app/start-636edb49.js">
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="modulepreload" href="/_app/start-bc3ffdca.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-a9553bf4.js">
-			<script type="module">
-				import { start } from "/_app/start-636edb49.js";
-				start({
-					target: document.querySelector("#svelte"),
-					paths: {"base":"","assets":""},
-					session: {},
-					route: true,
-					spa: true,
-					trailing_slash: "never",
-					hydrate: null
-				});
-			</script>
 	</head>
 	<body>
-		<div id="svelte"></div>
+		<div id="svelte">
+		<script type="module" data-hydrate="45h">
+		import { start } from "/_app/start-bc3ffdca.js";
+		start({
+			target: document.querySelector('[data-hydrate="45h"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: true,
+			trailing_slash: "never",
+			hydrate: null
+		});
+	</script></div>
         <script
         type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"

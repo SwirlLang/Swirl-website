@@ -43,8 +43,7 @@
         </div>
         <div
             class="d-flex flex-column align-items-center mt-lg-0 mt-4 align-items-md-center justify-content-md-center">
-            <div
-                class="mt-2 row row-cols-sm-2 row-cols-1 text-center text-lg-start px-3">
+            <div class="mt-2 features-grid text-center text-lg-start px-3">
                 <div class="col feature mb-4">
                     <i class="fas fa-rocket mb-3" />
                     <p>Speed</p>
@@ -80,6 +79,11 @@
 </div>
 
 <style lang="scss">
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
     .feature {
         i {
             font-size: 2.5em;

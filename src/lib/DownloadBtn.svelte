@@ -14,9 +14,6 @@
 
 <style lang="scss">
     .download-btn {
-        sub {
-            position: static;
-        }
         &:hover {
             background-color: white;
             color: black;

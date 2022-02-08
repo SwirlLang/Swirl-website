@@ -2,7 +2,7 @@
     import "../app.scss";
 </script>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
         <a class="ps-3 navbar-brand" href="/"
             ><img
@@ -139,6 +139,9 @@
         background-color: #131313 !important;
         a {
             color: white !important;
+            &:hover {
+                color: #bbbbbb !important;
+            }
         }
     }
     nav {
