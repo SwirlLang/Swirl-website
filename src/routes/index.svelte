@@ -2,9 +2,6 @@
     import DownloadBtn from "$lib/DownloadBtn.svelte";
 </script>
 
-<svelte:head>
-    <title>Lambda Code</title>
-</svelte:head>
 <div class="container-fluid hero vh-100">
     <div class="row h-100 row-cols-md-2 row-cols-1">
         <div
@@ -28,8 +25,11 @@
             </div>
         </div>
     </div>
+    <a href="#content">
+        <i class="fas fa-chevron-down text-light indicate-scroll" />
+    </a>
 </div>
-<div class="container">
+<div class="container" id="content">
     <div class="row row-cols-lg-2 row-cols-1" style="padding: 5rem 0rem;">
         <div
             class="col d-flex align-items-md-center align-items-end justify-content-center">
@@ -44,21 +44,21 @@
         <div
             class="d-flex flex-column align-items-center mt-lg-0 mt-4 align-items-md-center justify-content-md-center">
             <div class="mt-2 features-grid text-center text-lg-start px-3">
-                <div class="col feature mb-4">
+                <div class="feature mb-4">
                     <i class="fas fa-rocket mb-3" />
                     <p>Speed</p>
                     <p style="font-weight: 300;">
                         Fly high with a runtime speed as fast as C++
                     </p>
                 </div>
-                <div class="col feature mb-4">
+                <div class="feature">
                     <i class="fas fa-code mb-3" />
                     <p>Syntax</p>
                     <p style="font-weight: 300;">
                         Develop faster with a clean and high level syntax
                     </p>
                 </div>
-                <div class="col feature">
+                <div class="feature">
                     <i class="fas fa-book mb-3" />
                     <p>Std Lib</p>
                     <p style="font-weight: 300;">
@@ -66,7 +66,7 @@
                         libraries.
                     </p>
                 </div>
-                <div class="col feature">
+                <div class="feature">
                     <i class="fas fa-microchip mb-3" />
                     <p>Memory Management</p>
                     <p style="font-weight: 300;">
@@ -84,6 +84,11 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+    @media (max-width: 576px) {
+        .features-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
     .feature {
         i {
             font-size: 2.5em;
@@ -100,5 +105,17 @@
     }
     .hero {
         background: linear-gradient(90deg, #060b29 0%, #220b34 100%);
+    }
+    .indicate-scroll {
+        font-size: 1.5em;
+        position: relative;
+        top: -80px;
+        left: 50%;
+        transition:.5s;
+        padding:1rem;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(15px)
+        }
     }
 </style>

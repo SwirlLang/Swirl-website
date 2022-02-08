@@ -5,3 +5,9 @@ body {
     color: $fg-color !important;
     overflow-x: hidden;
 }
+html {
+    scroll-padding-top: 4rem;
+}
+.spacer {
+    padding-bottom: 7rem;
+}

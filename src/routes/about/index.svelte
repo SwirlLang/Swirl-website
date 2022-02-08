@@ -1,5 +1,4 @@
 <script>
-    import Spacer from "$lib/Spacer.svelte";
     import Member from "$lib/Member.svelte";
     let members = [
         {
@@ -25,17 +24,14 @@
     ];
 </script>
 
-<svelte:head>
-    <title>About</title>
-</svelte:head>
-<Spacer />
+<div class="spacer" />
 <div class="container text-center">
     <h1>About</h1>
     <p style="font-size:1.5em; max-width:40rem" class="mx-auto">
         Lambda code is a high level, compiled, statically typed, object-oriented
         programming language.
     </p>
-    <Spacer />
+    <div class="spacer" />
     <h1>Team</h1>
     <div class="row px-0 px-md-1 px-lg-5 justify-content-evenly">
         {#each members as member}
@@ -45,4 +41,4 @@
         {/each}
     </div>
 </div>
-<Spacer />
+<div class="spacer" />
