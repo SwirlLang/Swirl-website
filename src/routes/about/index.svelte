@@ -1,3 +1,7 @@
+<script context=module>
+    export const prerender = true;
+</script>
+
 <script>
     import Spacer from "$lib/Spacer.svelte";
     import Member from "$lib/Member.svelte";
