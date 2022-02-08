@@ -5,9 +5,10 @@ import preprocess from "svelte-preprocess";
 const config = {
     kit: {
         adapter: adapter({
-            // default options are shown
+            //config for adapter
             pages: "docs",
             assets: "docs",
+            fallback: "404.html",
             precompress: false,
         }),
 

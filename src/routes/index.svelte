@@ -25,8 +25,8 @@
             </div>
         </div>
     </div>
-    <a href="#content">
-        <i class="fas fa-chevron-down text-light indicate-scroll" />
+    <a href="#content" class="indicate-scroll">
+        <i class="fas fa-chevron-down text-light" />
     </a>
 </div>
 <div class="container" id="content">
@@ -107,15 +107,16 @@
         background: linear-gradient(90deg, #060b29 0%, #220b34 100%);
     }
     .indicate-scroll {
+        padding: 1rem 0;
         font-size: 1.5em;
-        position: relative;
-        top: -80px;
-        left: 50%;
-        transition:.5s;
-        padding:1rem;
-        cursor: pointer;
+        transition: 0.5s;
+        position: absolute;
+        top: calc(100vh - 90px);
+        width: 100%;
+        text-align: center;
+
         &:hover {
-            transform: translateY(15px)
+            transform: translateY(15px);
         }
     }
 </style>

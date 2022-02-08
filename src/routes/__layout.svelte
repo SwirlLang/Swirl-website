@@ -6,11 +6,10 @@
     <div class="container-fluid">
         <a class="ps-3 navbar-brand" href="/"
             ><img
-                src="favicon.svg"
+                src="https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png"
                 class="me-2"
-                height="37"
-                alt="Lambda Code Logo"
-                loading="lazy" />Lambda Code</a>
+                height="35"
+                alt="Lambda Code Logo" />Lambda Code</a>
         <button
             class="navbar-toggler pe-3"
             type="button"
@@ -27,7 +26,8 @@
                 <a class="nav-link" href="/about">about</a>
                 <a class="nav-link" href="/download">download</a>
                 <a class="nav-link" rel="external" href="/docs/">docs</a>
-                <div class="social d-flex align-items-center justify-content-center">
+                <div
+                    class="social d-flex align-items-center justify-content-center">
                     <a
                         class="nav-link"
                         href="https://github.com/LC-Lang/Lambda-Code"
