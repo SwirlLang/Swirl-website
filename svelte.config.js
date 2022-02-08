@@ -8,7 +8,6 @@ const config = {
             // default options are shown
             pages: "docs",
             assets: "docs",
-            fallback: "404.html",
             precompress: false,
         }),
 
