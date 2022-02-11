@@ -1,28 +1,18 @@
-<script>
-    import DownloadBtn from "$lib/DownloadBtn.svelte";
-</script>
-
 <div class="container-fluid hero vh-100">
-    <div class="row h-100 row-cols-md-2 row-cols-1">
-        <div
-            class="col d-flex align-items-md-center align-items-end justify-content-center">
-            <div class="container" style="width: fit-content;">
-                <h1>Lambda Code</h1>
-                <p>The language of tomorrow</p>
+    <div class="row h-100">
+        <div class="col-12 d-flex align-items-end text-center">
+            <div class="container">
+                <h1 class="header">Lambda Code</h1>
+                <p>A high level programming language.</p>
             </div>
         </div>
-        <div
-            class="col d-flex flex-column align-items-center mt-md-0 mt-4 align-items-md-center justify-content-md-center">
-            <DownloadBtn
-                content="Download Lambda Code"
-                subtitle="linux, windows, mac os"
-                link="/download" />
-            <div class="mt-2 docs-links">
-                <a rel="external" href="docs/#getting-started"
-                    >get started <i class="fas fa-external-link-alt me-1" /></a>
-                <a rel="external" href="docs/examples"
-                    >examples <i class="fas fa-external-link-alt" /></a>
-            </div>
+        <div class="col-12 text-center mt-3">
+            <button type="button" class="btn btn-primary btn-rounded"
+                >Download</button>
+            <button
+                type="button"
+                class="btn btn-outline-light btn-rounded text-light ms-4"
+                data-mdb-ripple-color="dark">get started</button>
         </div>
     </div>
     <a href="#content" class="indicate-scroll">
@@ -95,28 +85,26 @@
             color: rgba(255, 255, 255, 0.81);
         }
     }
-    .docs-links {
-        a {
-            color: white;
-            &:hover {
-                color: #bbbbbb;
-            }
-        }
-    }
     .hero {
         background: linear-gradient(90deg, #060b29 0%, #220b34 100%);
     }
     .indicate-scroll {
         padding: 1rem 0;
         font-size: 1.5em;
-        transition: 0.5s;
         position: absolute;
         top: calc(100vh - 90px);
+        left: 0;
         width: 100%;
         text-align: center;
-
-        &:hover {
+        i {
+            transition: 0.5s;
+        }
+        &:hover i {
             transform: translateY(15px);
         }
+    }
+    .header {
+        font-weight: 500;
+        font-size: 5rem;
     }
 </style>

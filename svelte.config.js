@@ -1,16 +1,10 @@
-import adapter from "@sveltejs/adapter-static";
+import adapter from "@sveltejs/adapter-vercel";
 import preprocess from "svelte-preprocess";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     kit: {
-        adapter: adapter({
-            //config for adapter
-            pages: "docs",
-            assets: "docs",
-            fallback: "404.html",
-            precompress: false,
-        }),
+        adapter: adapter({}),
 
         vite: {
             css: {

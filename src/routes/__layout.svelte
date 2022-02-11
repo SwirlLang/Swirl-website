@@ -8,7 +8,7 @@
             ><img
                 src="https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png"
                 class="me-2"
-                height="35"
+                height="32"
                 alt="Lambda Code Logo" />Lambda Code</a>
         <button
             class="navbar-toggler pe-3"
@@ -145,10 +145,8 @@
         }
     }
     nav {
-        font-family: roboto;
-        font-weight: 400;
-
-        background-color: #131313 !important;
+        background-color: $dark-3 !important;
+        font-size: .95em;
         i {
             color: white;
         }
