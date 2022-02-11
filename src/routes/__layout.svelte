@@ -136,9 +136,11 @@
         © 2022 Copyright
         <a class="text-dark" href="https://github.com/MrinmoyHaloi"
             >Mrinmoy Haloi</a>
-            <a class="mt-2 d-block" href="https://vercel.com/?utm_source=lc-team&utm_campaign=oss"
+        <a
+            class="mt-2 d-block"
+            href="https://vercel.com/?utm_source=lc-team&utm_campaign=oss"
             ><img
-                alt="Sponsored by vercel"
+                alt="Powered by Vercel"
                 src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
                 height="35px" /></a>
     </div>
