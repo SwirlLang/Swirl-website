@@ -1,10 +1,20 @@
 # Lambda Code website
 
+<a class="mt-2 d-block" href="https://vercel.com/?utm_source=lc-team&utm_campaign=oss">
+    <img
+        alt="Sponsored by vercel"
+        src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+        height="35px" />
+</a>
+
 ## Running the website
+
 first install required dependencies:
+
 ```bash
 npm install
 ```
+
 then start a development server:
 
 ```bash

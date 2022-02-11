@@ -7,12 +7,12 @@
             </div>
         </div>
         <div class="col-12 text-center mt-3">
-            <button type="button" class="btn btn-primary btn-rounded"
-                >Download</button>
-            <button
-                type="button"
+            <a href="/download" class="btn btn-primary btn-rounded"
+                >Download</a>
+            <a
+                href="https://lc-lang.github.io/docs/#getting-started"
                 class="btn btn-outline-light btn-rounded text-light ms-4"
-                data-mdb-ripple-color="dark">get started</button>
+                data-mdb-ripple-color="dark">get started</a>
         </div>
     </div>
     <a href="#content" class="indicate-scroll">
@@ -92,7 +92,7 @@
         padding: 1rem 0;
         font-size: 1.5em;
         position: absolute;
-        top: calc(100vh - 90px);
+        top: calc(100vh - 110px);
         left: 0;
         width: 100%;
         text-align: center;
@@ -106,5 +106,11 @@
     .header {
         font-weight: 500;
         font-size: 5rem;
+    }
+    .btn-outline-light {
+        &:hover {
+            background-color: white;
+            color: black !important;
+        }
     }
 </style>

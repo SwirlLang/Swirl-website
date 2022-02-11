@@ -9,7 +9,7 @@
                 src="https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png"
                 class="me-2"
                 height="32"
-                alt="Lambda Code Logo" />Lambda Code</a>
+                alt="LC Logo" />Lambda Code</a>
         <button
             class="navbar-toggler pe-3"
             type="button"
@@ -25,7 +25,10 @@
                 <a class="nav-link" href="/">Home</a>
                 <a class="nav-link" href="/about">about</a>
                 <a class="nav-link" href="/download">download</a>
-                <a class="nav-link" rel="external" href="/docs/">docs</a>
+                <a
+                    class="nav-link"
+                    rel="external"
+                    href="https://lc-lang.github.io/docs/">docs</a>
                 <div
                     class="social d-flex align-items-center justify-content-center">
                     <a
@@ -72,15 +75,15 @@
                         <a href="/download/linux" class="text-dark">Linux</a>
                     </li>
                     <li>
+                        <a href="/download/mac os" class="text-dark">Mac OS</a>
+                    </li>
+                    <li>
                         <a href="/download/windows" class="text-dark"
                             >Windows</a>
                     </li>
                     <li>
                         <a href="/download/source code" class="text-dark"
                             >Source Code</a>
-                    </li>
-                    <li>
-                        <a href="/download" class="text-dark">All downloads</a>
                     </li>
                 </ul>
             </div>
@@ -90,13 +93,15 @@
 
                 <ul class="list-unstyled mb-0">
                     <li>
-                        <a rel="external" href="/docs" class="text-dark"
-                            >Docs</a>
+                        <a
+                            rel="external"
+                            href="https://lc-lang.github.io/docs"
+                            class="text-dark">Docs</a>
                     </li>
                     <li>
                         <a
                             rel="external"
-                            href="/docs/#getting-started"
+                            href="https://lc-lang.github.io/docs/#getting-started"
                             class="text-dark">Getting started</a>
                     </li>
                 </ul>
@@ -128,9 +133,14 @@
 
     <!-- Copyright message -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2022 Copyright <a
-            class="text-dark"
-            href="https://github.com/MrinmoyHaloi">Mrinmoy Haloi</a>
+        © 2022 Copyright
+        <a class="text-dark" href="https://github.com/MrinmoyHaloi"
+            >Mrinmoy Haloi</a>
+            <a class="mt-2 d-block" href="https://vercel.com/?utm_source=lc-team&utm_campaign=oss"
+            ><img
+                alt="Sponsored by vercel"
+                src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+                height="35px" /></a>
     </div>
 </footer>
 
@@ -146,7 +156,8 @@
     }
     nav {
         background-color: $dark-3 !important;
-        font-size: .95em;
+        font-size: 0.95em;
+        font-weight: 500;
         i {
             color: white;
         }

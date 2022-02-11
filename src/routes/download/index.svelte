@@ -26,10 +26,10 @@
     <div class="d-flex justify-content-center gap-3 flex-wrap">
         <a href="/download/linux" class="link-light download-btn"
             ><i class="fab fa-linux" /> Linux</a>
+            <a href="/download/mac os" class="link-light download-btn"
+                ><i class="fab fa-apple" /> mac os</a>
         <a href="/download/windows" class="link-light download-btn"
             ><i class="fab fa-windows" /> Windows</a>
-        <a href="/download/mac os" class="link-light download-btn"
-            ><i class="fab fa-apple" /> mac os</a>
         <a href="/download/source code" class="link-light download-btn"
             ><i class="fas fa-code" /> source code</a>
     </div>
