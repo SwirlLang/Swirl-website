@@ -2,5 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "github": {
     "silent": true
-  }
+  },
+  "rewrites": [
+      {
+          "source": "/docs/:match*",
+          "destination": "https://lc-docs.vercel.app/:match*"
+      }
+  ]
 }

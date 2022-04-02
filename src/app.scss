@@ -1,21 +1,36 @@
-/* global styles are written here, in SCSS syntax. Variables and mixins from the src/variables.scss file are automatically imported*/
+/* global styles are written here, in SCSS syntax. Variables and mixins from src/variables.scss are automatically imported*/
 body {
-    font-family: roboto;
     background-color: $bg-color !important;
-    color: $fg-color !important;
     overflow-x: hidden;
 }
-th,
-tr {
-    color: $fg-color !important;
+[data-scroll]{
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(0.93);
+    transition: all .5s !important;
+}
+[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+[data-scroll="out"] {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(0.93);
+    transition: all 1.5s;
 }
 html {
-    scroll-padding-top: 61px;
+    scroll-padding-top: 58px;
 }
 .spacer {
     padding-bottom: 7rem;
 }
-
+.link-light{
+    color: #fbfbfb !important;
+    &:hover {
+        color:#d3d3d3 !important;
+    }
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

@@ -13,32 +13,32 @@
             },
         };
     }
-</script> -->
+</script>
 
 <script>
-    // export let releases;
-</script>
+    export let releases;
+</script> -->
 
 <div class="spacer" />
 <div class="container text-center">
     <h1>Download</h1>
     <p>Download Lambda Code for your operating system</p>
     <div class="d-flex justify-content-center gap-3 flex-wrap">
-        <a href="/download/linux" class="link-light download-btn"
+        <a href="/download/linux" class="text-light download-btn"
             ><i class="fab fa-linux" /> Linux</a>
-            <a href="/download/mac os" class="link-light download-btn"
+            <a href="/download/mac os" class="text-light download-btn"
                 ><i class="fab fa-apple" /> mac os</a>
-        <a href="/download/windows" class="link-light download-btn"
+        <a href="/download/windows" class="text-light download-btn"
             ><i class="fab fa-windows" /> Windows</a>
-        <a href="/download/source code" class="link-light download-btn"
+        <a href="/download/source code" class="text-light download-btn"
             ><i class="fas fa-code" /> source code</a>
     </div>
-    <p class="note note-warning bg-dark d-inline-block mt-4">
+    <p class="note note-warning text-light bg-dark d-inline-block mt-4">
         <strong>Warning:</strong> Downloads are not working for now.
     </p>
     <!-- <div class="spacer" />
     <h1>Releases</h1>
-    <table class="table">
+    <table class="table bg-dark">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -52,8 +52,8 @@
                 <tr>
                     <th scope="row">{i + 1}</th>
                     <td>{release["tag_name"]}</td>
-                    <td><a href="{release["html_url"]}">Go to release</a></td>
-                    <td class="w-75"><p class="">{release["body"]}</p></td>
+                    <td><a class="btn btn-outline-light" href="{release["html_url"]}">Go to release</a></td>
+                    <td class="" style="max-width: 5rem !important;"><p class="text-truncate">{release["body"]}</p></td>
                 </tr>
             {/each}
         </tbody>
@@ -66,7 +66,7 @@
     .download-btn {
         flex-basis: 255px;
         padding: 1rem 3rem;
-        background-color: $dark-3;
+        background-color: $dark-2;
         & > i {
             font-size: 1.3em;
             vertical-align: middle;
@@ -74,6 +74,6 @@
     }
     .download-btn:hover {
         color: #bbbbbb !important;
-        background-color: $dark-2;
+        background-color: $dark-1;
     }
 </style>
