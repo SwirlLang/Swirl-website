@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <a class="ps-3 navbar-brand" href="/"
             ><img
-                src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl%20monogram%20logo.png"
+                src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png"
                 class="me-3"
                 height="35"
                 alt="Swirl Logo" />Swirl</a>
