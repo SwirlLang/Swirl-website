@@ -6,7 +6,7 @@
   "rewrites": [
       {
           "source": "/docs/:match*",
-          "destination": "https://lc-docs.vercel.app/:match*"
+          "destination": "https://swirl-docs.vercel.app/:match*"
       }
   ]
 }
