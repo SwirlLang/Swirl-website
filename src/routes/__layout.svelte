@@ -6,10 +6,10 @@
     <div class="container-fluid">
         <a class="ps-3 navbar-brand" href="/"
             ><img
-                src="https://raw.githubusercontent.com/LC-Lang/branding/main/logos/lc-logo.png"
-                class="me-2"
-                height="32"
-                alt="LC Logo" />Lambda Code</a>
+                src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl%20monogram%20logo.png"
+                class="me-3"
+                height="35"
+                alt="Swirl Logo" />Swirl</a>
         <button
             class="navbar-toggler pe-3"
             type="button"
@@ -60,7 +60,7 @@
                 <a href="https://discord.gg/RSJ5TUDdqx" class="text-white me-4">
                     <i class="fab fa-discord" />
                 </a>
-                <a href="https://github.com/LC-Lang" class="text-white me-4">
+                <a href="https://github.com/SwirlLang" class="text-white me-4">
                     <i class="fab fa-github" />
                 </a>
             </div>
@@ -74,10 +74,10 @@
         <div class="container-lg text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold">Lambda Code</h6>
+                    <h6 class="text-uppercase fw-bold">Swirl</h6>
                     <hr class="header-sep" />
                     <p class="mx-auto" style="max-width: 21rem;">
-                        Lambda code is a high level, compiled, statically typed,
+                        Swirl is a high level, compiled, statically typed,
                         object-oriented programming language.
                     </p>
                 </div>
@@ -145,12 +145,12 @@
                     <ul class="list-unstyled">
                         <li>
                             <a
-                                href="https://github.com/LC-Lang/Lambda-Code/issues"
+                                href="https://github.com/SwirlLang/Swirl/issues"
                                 class="text-dark">GitHub Issues</a>
                         </li>
                         <li>
                             <a
-                                href="https://github.com/LC-Lang/Lambda-Code/discussions"
+                                href="https://github.com/SwirlLang/Swirl/discussions"
                                 class="text-dark">Forum</a>
                         </li>
                         <li>
@@ -174,7 +174,7 @@
         <a
             style="width: fit-content;"
             class="mt-2 d-block mx-auto"
-            href="https://vercel.com/?utm_source=lc-team&amp;utm_campaign=oss"
+            href="https://vercel.com/?utm_source=swirl-team&amp;utm_campaign=oss"
             ><img
                 alt="Powered by Vercel"
                 src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"

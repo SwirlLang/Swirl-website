@@ -29,7 +29,7 @@
     <div class="text-sm-center text-start">
         <h1>About</h1>
         <p style="font-size:1.4em; max-width:40rem; line-height: 2.6rem;" class="mx-auto">
-            Lambda Code is a general purpose, high level programming language.
+            Swirl is a general purpose, high level programming language.
             It accommodates features like static typing, object-oriented, functional etc.
         </p>
     </div>

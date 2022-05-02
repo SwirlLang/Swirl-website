@@ -30,7 +30,7 @@
         <h2>Download for {params.id}</h2>
     {/if}
     {#if params.id == "source code"}
-        <a href="https://github.com/LC-Lang/Lambda-Code" class="link-light"
+        <a href="https://github.com/SwirlLang/Swirl" class="link-light"
             >Download
             <i class="fas fa-arrow-up-right-from-square" /></a>
     {:else}

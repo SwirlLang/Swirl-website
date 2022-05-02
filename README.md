@@ -1,6 +1,6 @@
-# Lambda Code website
+# Swirl website
 
-<a class="mt-2 d-block" href="https://vercel.com/?utm_source=lc-team&utm_campaign=oss">
+<a class="mt-2 d-block" href="https://vercel.com/?utm_source=swirl-team&utm_campaign=oss">
     <img
         alt="Powered by Vercel"
         src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"

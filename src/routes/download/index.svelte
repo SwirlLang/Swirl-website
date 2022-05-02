@@ -3,7 +3,7 @@
     /** @type {import('@sveltejs/kit').Load} */
     export async function load({ fetch }) {
         const response = await fetch(
-            `${url}/repos/lc-lang/lambda-code/releases`
+            `${url}/repos/SwirlLang/Swirl/releases`
         );
 
         return {
@@ -22,7 +22,7 @@
 <div class="spacer" />
 <div class="container text-center">
     <h1>Download</h1>
-    <p>Download Lambda Code for your operating system</p>
+    <p>Download Swirl for your operating system</p>
     <div class="d-flex justify-content-center gap-3 flex-wrap">
         <a href="/download/linux" class="text-light download-btn"
             ><i class="fab fa-linux" /> Linux</a>

@@ -12,7 +12,7 @@
         <div class="col-12 d-flex align-items-end text-center">
             <div class="container-fluid">
                 <div class="header-container mx-auto">
-                    <h1 class="header">Lambda Code</h1>
+                    <h1 class="header">Swirl</h1>
                 </div>
                 <p>A high level programming language.</p>
             </div>
@@ -21,7 +21,7 @@
             <a href="/download" class="btn btn-md btn-primary btn-rounded me-2"
                 >Download</a>
             <a
-                href="https://lc-lang.github.io/docs/#getting-started"
+                href="https://SwirlLang.github.io/docs/#getting-started"
                 class="btn btn-md btn-outline-light btn-rounded text-light ms-2"
                 data-mdb-ripple-color="dark">get started</a>
         </div>
@@ -32,7 +32,7 @@
 </div>
 <div class="container" id="content">
     <div class="row" style="padding: 3rem 0rem;">
-        <h2 class="text-center mb-5" data-scroll>Why Lambda Code</h2>
+        <h2 class="text-center mb-5" data-scroll>Why Swirl</h2>
         <div class="d-flex justify-content-center">
             <div class="mt-2 features-grid px-3">
                 <div class="feature" data-scroll>
@@ -57,7 +57,7 @@
                     <i class="fas fa-microchip mb-3" />
                     <p>Memory Management</p>
                     <p>
-                        Write code comfortably, LC takes care of memory for you.
+                        Write code comfortably, Swirl takes care of memory for you.
                     </p>
                 </div>
             </div>
