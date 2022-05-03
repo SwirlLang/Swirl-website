@@ -21,7 +21,7 @@
             <a href="/download" class="btn btn-md btn-primary btn-rounded me-2"
                 >Download</a>
             <a
-                href="https://SwirlLang.github.io/docs/#getting-started"
+                href="https://swirl-lang.vercel.app/docs/#getting-started"
                 class="btn btn-md btn-outline-light btn-rounded text-light ms-2"
                 data-mdb-ripple-color="dark">get started</a>
         </div>

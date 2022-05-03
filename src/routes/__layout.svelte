@@ -47,7 +47,7 @@
     class="text-center text-lg-start text-white"
     style="background-color: #1c2331">
     <!-- Section: Social media -->
-    <section class="p-3 p-sm-4" style="background-color: #1d1d1d">
+    <div class="p-3 p-sm-4" style="background-color: #1d1d1d">
         <div class="container-lg d-flex justify-content-between">
             <!-- Left -->
             <div class="me-2 text-start">
@@ -66,11 +66,11 @@
             </div>
             <!-- Right -->
         </div>
-    </section>
+    </div>
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <section>
+    <div>
         <div class="container-lg text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -112,7 +112,7 @@
                                 >Linux</a>
                         </li>
                         <li>
-                            <a href="/download/mac os" class="text-dark"
+                            <a href="/download/mac%20os" class="text-dark"
                                 >Mac OS</a>
                         </li>
                         <li>
@@ -120,7 +120,7 @@
                                 >Windows</a>
                         </li>
                         <li>
-                            <a href="/download/source code" class="text-dark"
+                            <a href="/download/source%20code" class="text-dark"
                                 >Source Code</a>
                         </li>
                     </ul>
@@ -162,7 +162,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Section: Links  -->
 
     <!-- Copyright -->
@@ -178,7 +178,7 @@
             ><img
                 alt="Powered by Vercel"
                 src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-                height="32px" /></a>
+                height="32" /></a>
     </div>
     <!-- Copyright -->
 </footer>
