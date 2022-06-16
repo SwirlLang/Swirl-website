@@ -10,14 +10,14 @@
     "devDependencies": {
         "@sveltejs/adapter-auto": "next",
         "@sveltejs/kit": "next",
-        "autoprefixer": "^10.4.2",
-        "cssnano": "^5.0.15",
-        "postcss": "^8.4.5",
-        "prettier": "^2.5.1",
-        "prettier-plugin-svelte": "^2.6.0",
-        "sass": "^1.49.0",
-        "svelte": "^3.44.0",
-        "svelte-preprocess": "^4.10.2"
+        "autoprefixer": "^10.4.7",
+        "cssnano": "^5.1.11",
+        "postcss": "^8.4.14",
+        "prettier": "^2.7.1",
+        "prettier-plugin-svelte": "^2.7.0",
+        "sass": "^1.52.3",
+        "svelte": "^3.48.0",
+        "svelte-preprocess": "^4.10.7"
     },
     "type": "module",
     "dependencies": {
