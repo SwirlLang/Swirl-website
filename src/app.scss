@@ -3,11 +3,11 @@ body {
     background-color: $bg-color !important;
     overflow-x: hidden;
 }
-[data-scroll]{
+[data-scroll] {
     opacity: 0;
     will-change: transform, scale, opacity;
     transform: translateY(6rem) scale(0.93);
-    transition: all .5s !important;
+    transition: all 0.5s !important;
 }
 [data-scroll="in"] {
     opacity: 1;
@@ -25,10 +25,10 @@ html {
 .spacer {
     padding-bottom: 7rem;
 }
-.link-light{
+.link-light {
     color: #fbfbfb !important;
     &:hover {
-        color:#d3d3d3 !important;
+        color: #d3d3d3 !important;
     }
 }
 /* width */
@@ -51,4 +51,17 @@ html {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(185, 185, 185);
+}
+
+input {
+    color-scheme: dark;
+}
+
+// bootstrap changes
+.btn-primary {
+    background-color: #4a00e0;
+    color: #fff;
+    &:hover {
+        background-color: rgb(60, 0, 180);
+    }
 }

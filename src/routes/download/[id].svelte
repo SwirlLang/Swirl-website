@@ -29,17 +29,17 @@
     {:else}
         <h2>Download for {params.id}</h2>
     {/if}
-    {#if params.id == "source code"}
+    {#if params.id == "source-code"}
         <a href="https://github.com/SwirlLang/Swirl" class="link-light"
             >Download
-            <i class="fas fa-arrow-up-right-from-square" /></a>
+            <i class="bi bi-box-arrow-up-right" /></a>
     {:else}
         <p>coming soon</p>
     {/if}
     {#if params.id == "windows"}
         <p>Trust me. Its a bad choice</p>
     {/if}
-    {#if params.id == "mac os"}
+    {#if params.id == "mac-os"}
         <p>Only for 99.99$</p>
     {/if}
 </div>

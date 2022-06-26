@@ -55,7 +55,8 @@
             </div>
 
             <!-- Submit button -->
-            <button type="submit" class="btn btn-primary mb-4">Send</button>
+            <button type="submit" class="btn btn-primary btn-rounded mb-4"
+                >Send</button>
         </form>
     </div>
 </div>

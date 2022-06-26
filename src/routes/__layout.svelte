@@ -1,5 +1,7 @@
 <script>
     import "../app.scss";
+    import { page } from "$app/stores";
+    $: path = $page.url.pathname.substr($page.url.pathname.lastIndexOf("/"));
 </script>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -23,16 +25,23 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto me-3 text-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link {path === '/' ? 'active' : ''}" href="/"
+                        >Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a
+                        class="nav-link {path === '/about' ? 'active' : ''}"
+                        href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a
+                        class="nav-link {path === '/contact' ? 'active' : ''}"
+                        href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/download">Download</a>
+                    <a
+                        class="nav-link {path === '/download' ? 'active' : ''}"
+                        href="/download">Download</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/docs">Docs</a>
@@ -56,12 +65,24 @@
             <!-- Left -->
 
             <!-- Right -->
-            <div style="display: flex; align-items: center;">
-                <a href="https://discord.gg/RSJ5TUDdqx" class="text-white me-4">
-                    <i class="fab fa-discord" />
+            <div class="social-media">
+                <a
+                    href="https://discord.gg/RSJ5TUDdqx"
+                    target="_blank"
+                    class="text-white">
+                    <i class="bi bi-discord" />
                 </a>
-                <a href="https://github.com/SwirlLang" class="text-white me-4">
-                    <i class="fab fa-github" />
+                <a
+                    href="https://github.com/SwirlLang"
+                    target="_blank"
+                    class="text-white">
+                    <i class="bi bi-github" />
+                </a>
+                <a
+                    href="https://twitter.com/SwirlLang"
+                    target="_blank"
+                    class="text-white">
+                    <i class="bi bi-twitter" />
                 </a>
             </div>
             <!-- Right -->
@@ -112,7 +133,7 @@
                                 >Linux</a>
                         </li>
                         <li>
-                            <a href="/download/mac%20os" class="text-dark"
+                            <a href="/download/mac-os" class="text-dark"
                                 >Mac OS</a>
                         </li>
                         <li>
@@ -120,7 +141,7 @@
                                 >Windows</a>
                         </li>
                         <li>
-                            <a href="/download/source%20code" class="text-dark"
+                            <a href="/download/source-code" class="text-dark"
                                 >Source Code</a>
                         </li>
                     </ul>
@@ -191,9 +212,15 @@
         margin-left: auto !important;
         display: inline-block !important;
         width: 60px;
-        background-color: #7700ff;
+        background-color: #4a00e0;
         height: 2px;
         opacity: 0.5;
+    }
+    .social-media {
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
     footer {
         background-color: $dark-3 !important;
@@ -207,7 +234,7 @@
     nav {
         backdrop-filter: blur(5px);
         background-color: rgba(0, 0, 0, 0.425) !important;
-        font-size: 0.95em;
+        font-size: 0.88em;
         font-weight: 500;
         a {
             color: white !important;
@@ -221,20 +248,25 @@
             padding: 0.5rem 0.65rem;
             transition: 0.2s;
             position: relative;
-            overflow-x: hidden;
+            overflow-y: hidden;
             &:after {
                 padding-top: 5px;
                 content: "";
                 display: block;
-                border-bottom: 2px solid rgba(255, 255, 255, 0.918);
+                border-bottom: 4px solid rgba(255, 255, 255, 0.918);
                 position: absolute;
                 left: 0;
                 width: 100%;
-                transform: translateX(-101%);
+                transform: translateY(35%);
                 transition: 0.5s ease;
             }
             &:hover:after {
-                transform: translateX(0%);
+                transform: translateY(0%);
+            }
+            &.active {
+                &:after {
+                    transform: translateY(0%);
+                }
             }
         }
         @media screen and (max-width: 768px) {

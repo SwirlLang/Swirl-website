@@ -17,7 +17,10 @@
 
 <div class="spacer" />
 <div class="container text-center">
-    <h1>Oops!</h1>
+    <h1>
+        <i class="bi bi-exclamation-circle" /><i
+            class="bi bi-exclamation-circle" />ps!
+    </h1>
     {#if status == 404}
         <p>Page not found</p>
     {:else}
@@ -31,6 +34,9 @@
 <style lang="scss">
     h1 {
         font-size: 6rem;
+        i {
+            font-size: 4rem;
+        }
     }
     p {
         font-size: 1.3rem;
