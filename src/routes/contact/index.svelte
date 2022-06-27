@@ -1,16 +1,18 @@
 <div class="spacer" />
 <div class="container text-center">
     <div>
-        <p class="note note-warning text-light bg-dark d-inline-block">
-            <strong>Warning:</strong> Contact is not working for now.
-        </p>
         <h1>Contact Us</h1>
-        <form style="max-width: 30rem;" class="mx-auto">
+        <form
+            action="https://formsubmit.co/0d949e91ae5ed55a5cceae47ceb2b7b1"
+            method="POST"
+            style="max-width: 30rem;"
+            class="mx-auto">
             <div class="form-floating mb-4">
                 <input
                     type="text"
                     id="contactFormName"
                     class="form-control"
+                    name="name"
                     placeholder="name" />
                 <label class="form-label" for="contactFormName">Name</label>
             </div>
@@ -20,9 +22,21 @@
                     type="email"
                     id="contactFormEmail"
                     class="form-control"
+                    name="email"
                     placeholder="Email address" />
                 <label class="form-label" for="contactFormEmail"
                     >Email address</label>
+            </div>
+            <!-- subject -->
+            <div class="form-floating mb-4">
+                <input
+                    type="text"
+                    id="contactFormSubject"
+                    class="form-control"
+                    name="_subject"
+                    placeholder="Subject" />
+                <label class="form-label" for="contactFormSubject"
+                    >Subject</label>
             </div>
 
             <!-- Message input -->
@@ -32,6 +46,7 @@
                     style="height:13rem"
                     id="contactFormMessage"
                     rows="10"
+                    name="message"
                     placeholder="Message"
                     maxlength="550" />
                 <div class="form-helper">
@@ -40,20 +55,12 @@
                 <label class="form-label" for="contactFormMessage"
                     >Message</label>
             </div>
-
-            <!-- Checkbox -->
-            <div class="form-check d-flex justify-content-center mb-4">
-                <input
-                    class="form-check-input me-2"
-                    type="checkbox"
-                    value=""
-                    id="contactFormCheck"
-                    checked />
-                <label class="form-check-label" for="contactFormCheck">
-                    Send me a copy of this message
-                </label>
-            </div>
-
+            <!-- honeypot -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- success page -->
+            <!-- webhook -->
+            <input type="hidden" name="_webhook" value="https://discord.com/api/webhooks/990970705669673060/JsuMV2_GnfQhXiuC9jxL5dxeEskp0JOdX7-HrtVDjfnXamUCECLzOp9IxAKLI_sNSeFT">
+            <input type="hidden" name="_next" value="http://swirl-lang.vercel.app/contact/success">
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-rounded mb-4"
                 >Send</button>
