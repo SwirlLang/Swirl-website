@@ -58,8 +58,6 @@
             <!-- honeypot -->
             <input type="text" name="_honey" style="display:none">
             <!-- success page -->
-            <!-- webhook -->
-            <input type="hidden" name="_webhook" value="https://discord.com/api/webhooks/990970705669673060/JsuMV2_GnfQhXiuC9jxL5dxeEskp0JOdX7-HrtVDjfnXamUCECLzOp9IxAKLI_sNSeFT">
             <input type="hidden" name="_next" value="http://swirl-lang.vercel.app/contact/success">
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-rounded mb-4"
