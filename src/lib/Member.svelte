@@ -11,7 +11,7 @@
         alt="Profile picture of {name}" />
     <div class="card-body">
         <h5 class="card-title">{name}</h5>
-        <p class="card-text">{tagline}</p>
+        <p class="card-text" style="color: #bbb">Role: {tagline}</p>
         <a href="https://github.com/{github}" class="btn btn-primary btn-rounded">GitHub</a>
     </div>
 </div>

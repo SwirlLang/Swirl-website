@@ -3,22 +3,22 @@
     let members = [
         {
             name: "Mrinmoy",
-            tagline: "Web developer",
+            tagline: "Website, public relations",
             github: "mrinmoyHaloi",
         },
         {
             name: "Eight",
-            tagline: "Core dev",
+            tagline: "Core",
             github: "NeuralBruhh",
         },
         {
             name: "In-diaonic",
-            tagline: "Core dev",
+            tagline: "Core",
             github: "In-diaonic",
         },
         {
             name: "Empty",
-            tagline: "package manager dev",
+            tagline: "Package manager",
             github: "0x454d505459",
         },
     ];
@@ -30,10 +30,10 @@
         <h1>About</h1>
         <p style="font-size:1.4em; max-width:40rem; line-height: 2.6rem;" class="mx-auto">
             Swirl is a general purpose, high level programming language.
-            It accommodates features like static typing, object-oriented, functional etc.
+            Some of the main features of it are static typing, object-oriented, functional etc.
         </p>
     </div>
-    <h1>Team</h1>
+    <h2>Team</h2>
     <div class="member-grid mx-auto">
         {#each members as member}
             <div class="w-75 mx-auto">

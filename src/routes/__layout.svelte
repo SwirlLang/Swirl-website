@@ -187,19 +187,24 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        &copy Copyright 2022
-        <a class="text-white" href="https://github.com/mrinmoyhaloi"
-            >Mrinmoy Haloi</a>
-        <br />
-        <a
-            style="width: fit-content;"
-            class="mt-2 d-block mx-auto"
-            href="https://vercel.com/?utm_source=swirl-team&amp;utm_campaign=oss"
-            ><img
-                alt="Powered by Vercel"
-                src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-                height="32" /></a>
+    <div class="text-center text-md-start py-3" style="background-color: rgba(0, 0, 0, 0.2); color: #bbb">
+        <div class="container-lg">
+
+            Made with <i class="bi bi-heart-fill text-danger"></i> by
+            <a class="text-white" href="https://github.com/mrinmoyhaloi"
+                >Mrinmoy Haloi</a>
+            <br />
+            Thanks to Vercel for sponsoring the project
+            <a
+                style="width: fit-content;"
+                class="mt-2 d-block mx-auto mx-md-0"
+                href="https://vercel.com/?utm_source=swirl-team&amp;utm_campaign=oss"
+                >
+                <img
+                    alt="Powered by Vercel"
+                    src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+                    height="32" /></a>
+        </div>
     </div>
     <!-- Copyright -->
 </footer>
