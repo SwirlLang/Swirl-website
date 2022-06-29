@@ -4,7 +4,7 @@
         {
             name: "Mrinmoy",
             tagline: "Website, public relations",
-            github: "mrinmoyHaloi",
+            github: "MrinmoyHaloi",
         },
         {
             name: "Eight",
@@ -34,7 +34,7 @@
         </p>
     </div>
     <h2>Team</h2>
-    <div class="member-grid mx-auto">
+    <div class="member-grid mx-auto mt-4">
         {#each members as member}
             <div class="w-75 mx-auto">
                 <Member {...member} />

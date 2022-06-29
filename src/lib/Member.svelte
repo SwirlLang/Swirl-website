@@ -6,7 +6,7 @@
 
 <div class="text-center">
     <img
-        src="https://i.imgur.com/kWLg0M8.png"
+        src="https://github.com/{github}.png"
         class="card-img-top rounded-circle w-75"
         alt="Profile picture of {name}" />
     <div class="card-body">
