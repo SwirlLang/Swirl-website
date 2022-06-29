@@ -198,7 +198,7 @@
             <a
                 style="width: fit-content;"
                 class="mt-2 d-block mx-auto mx-md-0"
-                href="https://vercel.com/?utm_source=swirl-team&amp;utm_campaign=oss"
+                href="https://vercel.com/?utm_source=swirl-team&utm_campaign=oss"
                 >
                 <img
                     alt="Powered by Vercel"
