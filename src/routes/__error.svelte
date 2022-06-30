@@ -18,8 +18,7 @@
 <div class="spacer" />
 <div class="container text-center">
     <h1>
-        <i class="bi bi-exclamation-circle" /><i
-            class="bi bi-exclamation-circle" />ps!
+        oops!!
     </h1>
     {#if status == 404}
         <p>Page not found</p>
