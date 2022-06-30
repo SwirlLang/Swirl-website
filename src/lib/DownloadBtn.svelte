@@ -48,7 +48,7 @@
                     aria-label="Close" />
             </div>
             <div class="modal-body">
-                If you confirm it will download Swirl for {OS}
+                Download Swirl for {OS}
             </div>
             <div class="modal-footer">
                 <button
