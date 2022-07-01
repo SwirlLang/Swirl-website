@@ -48,6 +48,7 @@
 .member-grid {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 1rem;
     &>*{
         flex-basis:300px
     }
