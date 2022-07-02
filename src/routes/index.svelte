@@ -21,7 +21,7 @@
         <div class="col-12 text-center mt-3">
             <DownloadBtn />
             <div class="mt-2">
-                <a href="/downloads">More options</a> &nbsp&nbsp
+                <a href="/download">More options</a> &nbsp&nbsp
                 <a href="/docs/getting-started">get started</a>
             </div>
         </div>
