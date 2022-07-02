@@ -4,7 +4,7 @@
     import { onMount } from "svelte";
 
     onMount(() => {
-        ScrollOut({ threshold: 0.35, once: true });
+        ScrollOut({ threshold: 0.8, once: true });
     });
 </script>
 
@@ -31,9 +31,53 @@
     </a>
 </div>
 <div class="container" id="content">
-    <div class="row" style="padding: 3rem 0rem;">
-        <h2 class="text-center mb-5 fs-1" data-scroll>Why Swirl</h2>
-        <div class="d-flex justify-content-center">
+    <div class="" style="padding: 3rem 0rem;">
+        <h2 class="text-center fs-1">Why Swirl</h2>
+        <div class="container feature">
+            <div>
+                <p data-scroll class="slide-left">Speed</p>
+                <p>
+                    Fly high with a runtime speed as fast as C++. It is estimated that Swirl is around 15x faster than python. 
+                </p>
+                <p class="text-muted fst-italic">- from nonsense benchmark</p>
+                <a href="" class="btn btn-primary btn-rounded">Learn more</a>
+            </div>
+            <i data-scroll class="bi bi-lightning-charge" />
+        </div>
+        <div class="container feature">
+            <i data-scroll class="bi bi-code-slash" />
+            <div>
+                <p data-scroll class="slide-left">Syntax</p>
+                <p>
+                    Develop faster with a clean and high level syntax like python or rust.
+                    Enjoy the features like static typing, obejct oriented etc.
+                </p>
+                <a href="" class="btn btn-primary btn-rounded">Learn more</a>
+            </div>
+        </div>
+        <div class="container feature">
+            <div>
+                <p data-scroll class="slide-left">Std Lib</p>
+                <p>
+                    Feel powerful with the diverse set of standard libraries.
+                    You'll not have to find for a exetrnal library to do your work. Most of the work can be done by the standard library.
+                </p>
+                <a href="" class="btn btn-primary btn-rounded">Learn more</a>
+            </div>
+            <i data-scroll class="bi bi-journal-text" />
+        </div>
+        <div class="container feature">
+            <i data-scroll class="bi bi-cpu" />
+            <div>
+                <p data-scroll class="slide-left">Memory Management</p>
+                <p>
+                    Write code comfortably, Swirl takes care of memory for you.
+                    It automatically clears out memory for you, So that you can focus more on the fun side of programming.
+                </p>
+                <a href="" class="btn btn-primary btn-rounded">Learn more</a>
+            </div>
+        </div>
+        <!-- <div class="d-flex justify-content-center">
             <div class="mt-2 features-grid px-3">
                 <div class="feature" data-scroll>
                     <i class="bi bi-lightning-charge" />
@@ -62,40 +106,44 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
 <style lang="scss">
-    .features-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 260px;
-        gap: 2rem;
-    }
-    @media (max-width: 767px) {
-        .features-grid {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
     .feature {
-        text-align: center;
-        max-width: 22rem;
-        background-color: $dark-3;
-        padding: 0 1rem;
-        border-radius: 1rem;
+        max-width: 55rem;
+        padding: 4rem 0rem;
+        margin-bottom: 0.5rem;
         display: flex;
-        flex-direction: column;
+        gap: 2rem;
         justify-content: center;
+        align-items: center;
         i {
-            font-size: 3em;
-            color: rgba(255, 255, 255, 0.81);
+            font-size: 10rem;
+            background: linear-gradient(90deg, #8e2de2, #4a00e0);
+            background-clip: text;
+            color: transparent;
+            padding: 0 1rem;
         }
-        :nth-child(3) {
-            opacity: 0.8;
+        & div :nth-child(1) {
+            font-size: 2.7rem;
+            font-weight: 500;
         }
-        &:hover {
-            background-color: $dark-2;
+        & div :nth-child(2) {
+            font-size: 1.2rem;
+            opacity: 0.7;
+        }
+        @media screen and (max-width: 768px) {
+            & i {
+                display: none;
+            }
+            & {
+                padding: 3rem 2rem;
+            }
+            & div :nth-child(1) {
+                font-size: 2.4rem;
+            }
         }
     }
     .hero {
@@ -127,12 +175,7 @@
         font-weight: 600;
         font-size: 8rem;
         letter-spacing: 0.5rem;
-        background: linear-gradient(
-            90deg,
-            rgb(247, 90, 255) 0%,
-            rgb(0, 38, 255) 51%,
-            rgba(0, 212, 255, 1) 100%
-        );
+        background: linear-gradient(90deg, rgb(247, 90, 255), rgb(0, 38, 255));
         background-size: 300%;
         color: transparent;
         filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
