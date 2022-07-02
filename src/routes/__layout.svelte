@@ -98,7 +98,7 @@
                     <h6 class="text-uppercase fw-bold">Swirl</h6>
                     <hr class="header-sep" />
                     <p class="mx-auto" style="max-width: 21rem;">
-                        Swirl is a high level, compiled, statically typed,
+                        A high level, compiled, statically typed,
                         object-oriented programming language.
                     </p>
                 </div>
