@@ -20,7 +20,7 @@
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white" />
+            <i class="bi bi-list text-white fs-1" />
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto me-3 text-center">
