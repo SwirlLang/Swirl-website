@@ -44,8 +44,7 @@
             </div>
             <i data-scroll class="bi bi-lightning-charge" />
         </div>
-        <div class="container feature">
-            <i data-scroll class="bi bi-code-slash" />
+        <div class="container feature left">
             <div>
                 <p data-scroll class="slide-left">Syntax</p>
                 <p>
@@ -54,6 +53,7 @@
                 </p>
                 <a href="" class="btn btn-primary btn-rounded">Learn more</a>
             </div>
+            <i data-scroll class="bi bi-code-slash" />
         </div>
         <div class="container feature">
             <div>
@@ -66,8 +66,7 @@
             </div>
             <i data-scroll class="bi bi-journal-text" />
         </div>
-        <div class="container feature">
-            <i data-scroll class="bi bi-cpu" />
+        <div class="container feature left">
             <div>
                 <p data-scroll class="slide-left">Memory Management</p>
                 <p>
@@ -76,6 +75,7 @@
                 </p>
                 <a href="" class="btn btn-primary btn-rounded">Learn more</a>
             </div>
+            <i data-scroll class="bi bi-cpu" />
         </div>
         <!-- <div class="d-flex justify-content-center">
             <div class="mt-2 features-grid px-3">
@@ -113,12 +113,14 @@
 <style lang="scss">
     .feature {
         max-width: 55rem;
-        padding: 4rem 0rem;
-        margin-bottom: 0.5rem;
+        padding: 3rem 0rem;
         display: flex;
         gap: 2rem;
         justify-content: center;
         align-items: center;
+        &.left {
+            flex-direction: row-reverse;
+        }
         i {
             font-size: 10rem;
             background: linear-gradient(90deg, #8e2de2, #4a00e0);
@@ -136,14 +138,22 @@
         }
         @media screen and (max-width: 768px) {
             & i {
-                display: none;
+                font-size: 7rem;
+                padding: 0;
             }
             & {
+                flex-direction: column-reverse !important;
                 padding: 3rem 2rem;
+                gap:0;
+                align-items:start;
             }
             & div :nth-child(1) {
                 font-size: 2.4rem;
             }
+            & div :nth-child(2) {
+                font-size: 1.1rem;
+            }
+
         }
     }
     .hero {
