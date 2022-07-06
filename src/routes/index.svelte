@@ -13,8 +13,11 @@
         <div class="col-12 d-flex align-items-end text-center">
             <div class="container-fluid">
                 <div class="header-container mx-auto">
-                    <h1 class="header">Swirl</h1>
+                    <h1>
+                        <img src="/Swirl-wordmark-logo(transparent).svg" alt="Swirl" class="header">
+                    </h1>
                 </div>
+                <br>
                 <p>A high level programming language.</p>
             </div>
         </div>
@@ -182,27 +185,11 @@
         }
     }
     .header {
-        font-weight: 600;
-        font-size: 8rem;
-        letter-spacing: 0.5rem;
-        background: linear-gradient(90deg, rgb(247, 90, 255), rgb(0, 38, 255));
-        background-size: 300%;
-        color: transparent;
-        filter: drop-shadow(5px 5px 10px rgb(0, 0, 0));
-        background-clip: text;
-        animation: gradientAnimation 10s infinite alternate;
-    }
-    @keyframes gradientAnimation {
-        from {
-            background-position: left;
-        }
-        to {
-            background-position: right;
-        }
+        width: 26rem;
     }
     @media screen and (max-width: 576px) {
         .header {
-            font-size: 5.2rem;
+            width:18rem
         }
     }
     .header-container {
