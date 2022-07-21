@@ -9,7 +9,7 @@
         <a class="ps-3 navbar-brand" href="/"
             ><img
                 src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png"
-                class="me-3"
+                class="me-3 rounded-1"
                 height="35"
                 alt="Swirl Logo" />Swirl</a>
         <button
@@ -94,7 +94,7 @@
     <div>
         <div class="container-lg text-center text-md-start mt-5">
             <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Swirl</h6>
                     <hr class="header-sep" />
                     <p class="mx-auto" style="max-width: 21rem;">
@@ -102,7 +102,7 @@
                         object-oriented programming language.
                     </p>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Info</h6>
                     <hr class="header-sep" />
 
@@ -123,7 +123,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Download</h6>
                     <hr class="header-sep" />
 
@@ -146,7 +146,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Resources</h6>
                     <hr class="header-sep" />
 
@@ -160,7 +160,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Support</h6>
                     <hr class="header-sep" />
                     <ul class="list-unstyled">
@@ -220,6 +220,13 @@
         background-color: #4a00e0;
         height: 2px;
         opacity: 0.5;
+        transition: .5s;
+    }
+    .footer-section:hover {
+        .header-sep {
+            width: 75px;
+            opacity: 1;
+        }
     }
     .social-media {
         width: 10rem;
