@@ -2,22 +2,23 @@
     "name": "swirl-website",
     "version": "0.0.1",
     "scripts": {
-        "dev": "svelte-kit dev --host",
-        "build": "svelte-kit build",
-        "package": "svelte-kit package",
-        "preview": "svelte-kit preview"
+        "dev": "vite dev",
+        "build": "vite build",
+        "package": "vite package",
+        "preview": "vite preview"
     },
     "devDependencies": {
         "@sveltejs/adapter-auto": "next",
         "@sveltejs/kit": "next",
         "autoprefixer": "^10.4.7",
-        "cssnano": "^5.1.11",
+        "cssnano": "^5.1.12",
         "postcss": "^8.4.14",
         "prettier": "^2.7.1",
         "prettier-plugin-svelte": "^2.7.0",
-        "sass": "^1.52.3",
-        "svelte": "^3.48.0",
-        "svelte-preprocess": "^4.10.7"
+        "sass": "^1.53.0",
+        "svelte": "^3.49.0",
+        "svelte-preprocess": "^4.10.7",
+        "vite": "^3.0.2"
     },
     "type": "module",
     "dependencies": {

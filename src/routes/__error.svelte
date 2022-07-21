@@ -33,9 +33,6 @@
 <style lang="scss">
     h1 {
         font-size: 6rem;
-        i {
-            font-size: 4rem;
-        }
     }
     p {
         font-size: 1.3rem;

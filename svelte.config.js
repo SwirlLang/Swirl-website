@@ -5,16 +5,6 @@ import preprocess from "svelte-preprocess";
 const config = {
     kit: {
         adapter: adapter(),
-
-        vite: {
-            css: {
-                preprocessorOptions: {
-                    scss: {
-                        additionalData: '@use "src/variables.scss" as *;',
-                    },
-                },
-            },
-        },
     },
     preprocess: [
         preprocess({
