@@ -67,19 +67,19 @@
             <!-- Right -->
             <div class="social-media">
                 <a
-                    href="https://discord.gg/RSJ5TUDdqx"
+                    href="/discord"
                     target="_blank"
                     class="text-white">
                     <i class="bi bi-discord" />
                 </a>
                 <a
-                    href="https://github.com/SwirlLang"
+                    href="/github"
                     target="_blank"
                     class="text-white">
                     <i class="bi bi-github" />
                 </a>
                 <a
-                    href="https://twitter.com/SwirlLang"
+                    href="/twitter"
                     target="_blank"
                     class="text-white">
                     <i class="bi bi-twitter" />
@@ -91,7 +91,6 @@
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <div>
         <div class="container-lg text-center text-md-start mt-5">
             <div class="row mt-3">
                 <div
@@ -188,7 +187,6 @@
                 </div>
             </div>
         </div>
-    </div>
     <!-- Section: Links  -->
 
     <!-- Copyright -->
