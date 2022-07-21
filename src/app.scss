@@ -77,7 +77,7 @@ input {
 
 // bootstrap changes
 .btn-primary {
-    background-color: #4a00e0;
+    background-color: $primary;
     color: #fff;
     &:hover {
         background-color: rgb(60, 0, 180);

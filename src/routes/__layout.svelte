@@ -94,7 +94,8 @@
     <div>
         <div class="container-lg text-center text-md-start mt-5">
             <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-section">
+                <div
+                    class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Swirl</h6>
                     <hr class="header-sep" />
                     <p class="mx-auto" style="max-width: 21rem;">
@@ -102,7 +103,8 @@
                         object-oriented programming language.
                     </p>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
+                <div
+                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Info</h6>
                     <hr class="header-sep" />
 
@@ -123,7 +125,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
+                <div
+                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Download</h6>
                     <hr class="header-sep" />
 
@@ -146,7 +149,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
+                <div
+                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Resources</h6>
                     <hr class="header-sep" />
 
@@ -160,7 +164,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 footer-section">
+                <div
+                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 footer-section">
                     <h6 class="text-uppercase fw-bold">Support</h6>
                     <hr class="header-sep" />
                     <ul class="list-unstyled">
@@ -187,10 +192,11 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center text-md-start py-3" style="background-color: rgba(0, 0, 0, 0.2); color: #bbb">
+    <div
+        class="text-center text-md-start py-3"
+        style="background-color: rgba(0, 0, 0, 0.2); color: #bbb">
         <div class="container-lg">
-
-            Made with <i class="bi bi-heart-fill text-danger"></i> by
+            Made with <i class="bi bi-heart-fill text-danger" /> by
             <a class="text-white" href="https://github.com/mrinmoyhaloi"
                 >Mrinmoy Haloi</a>
             <br />
@@ -198,8 +204,7 @@
             <a
                 style="width: fit-content;"
                 class="mt-2 d-block mx-auto mx-md-0"
-                href="https://vercel.com/?utm_source=swirl-team&utm_campaign=oss"
-                >
+                href="https://vercel.com/?utm_source=swirl-team&utm_campaign=oss">
                 <img
                     alt="Powered by Vercel"
                     src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
@@ -217,10 +222,10 @@
         margin-left: auto !important;
         display: inline-block !important;
         width: 60px;
-        background-color: #4a00e0;
+        background-color: $primary;
         height: 2px;
         opacity: 0.5;
-        transition: .5s;
+        transition: 0.5s;
     }
     .footer-section:hover {
         .header-sep {
