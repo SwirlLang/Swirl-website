@@ -251,12 +251,24 @@
         background-color: rgba(0, 0, 0, 0.425) !important;
         font-size: 0.88em;
         font-weight: 500;
-        a {
+        .navbar-nav {
+            a {
+                color: white !important;
+                font-size: 1.3em;
+    
+                &:hover {
+                    color: #bbbbbb !important;
+                }
+            }
+        }
+        .navbar-brand {
             color: white !important;
             font-size: 1.3em;
-
             &:hover {
                 color: #bbbbbb !important;
+                img {
+                    opacity: .8;
+                }
             }
         }
         .nav-link {
