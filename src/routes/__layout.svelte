@@ -25,10 +25,6 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto me-3 text-center">
                 <li class="nav-item">
-                    <a class="nav-link {path === '/' ? 'active' : ''}" href="/"
-                        >Home</a>
-                </li>
-                <li class="nav-item">
                     <a
                         class="nav-link {path === '/about' ? 'active' : ''}"
                         href="/about">About</a>
@@ -252,6 +248,7 @@
         font-size: 0.88em;
         font-weight: 500;
         .navbar-nav {
+            gap: 1rem;
             a {
                 color: white !important;
                 font-size: 1.3em;
@@ -276,20 +273,6 @@
             transition: 0.2s;
             position: relative;
             overflow-y: hidden;
-            &:after {
-                padding-top: 5px;
-                content: "";
-                display: block;
-                border-bottom: 4px solid rgba(255, 255, 255, 0.918);
-                position: absolute;
-                left: 0;
-                width: 100%;
-                transform: translateY(35%);
-                transition: 0.5s ease;
-            }
-            &:hover:after {
-                transform: translateY(0%);
-            }
             &.active {
                 &:after {
                     transform: translateY(0%);

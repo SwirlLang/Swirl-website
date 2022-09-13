@@ -6,7 +6,15 @@
   "rewrites": [
       {
           "source": "/docs/:match*",
-          "destination": "https://swirl-docs.vercel.app/:match*"
+          "destination": "https://swirl-docs.vercel.app/docs/:match*"
+      },
+      {
+          "source": "/blog/:match*",
+          "destination": "https://swirl-docs.vercel.app/blog/:match*"
+      },
+      {
+          "source": "/assets/:match*",
+          "destination": "https://swirl-docs.vercel.app/assets/:match*"
       }
   ]
 }
