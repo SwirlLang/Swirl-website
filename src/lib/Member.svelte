@@ -4,17 +4,25 @@
     export let github;
 </script>
 
-<div class="text-center">
+<div class="member-card">
     <img
         src="https://github.com/{github}.png"
-        class="card-img-top rounded-circle w-75"
+        class="card-img w-50"
         alt="Profile picture of {name}" />
-    <div class="card-body">
+    <div class="mt-4">
         <h5 class="card-title">{name}</h5>
-        <p class="card-text" style="color: #bbb">Role: {tagline}</p>
-        <a href="https://github.com/{github}" class="btn btn-primary btn-rounded">GitHub</a>
+        <p class="card-text" style="color: #bbb">{tagline}</p>
+        <a href="https://github.com/{github}" class="btn btn-primary btn-rounded"><i class="bi bi-box-arrow-up-right"></i> GitHub</a>
     </div>
 </div>
 
-<style>
+<style lang="scss">
+    .member-card {
+        padding: 2rem;
+        background-color: $dark-2;
+        border-radius: 1rem;
+        .card-img {
+            border-radius: 1rem;
+        }
+    }
 </style>

@@ -19,7 +19,7 @@
     });
 </script>
 
-<div class="download-container mx-auto" style="width: fit-content;">
+<div class="download-container" style="width: fit-content;">
     <a
         href="/download"
         class="btn btn-rounded py-2 px-4 download-btn"

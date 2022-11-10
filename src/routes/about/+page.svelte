@@ -25,18 +25,17 @@
 </script>
 
 <div class="spacer" />
-<div class="container text-center">
-    <div class="text-sm-center text-start">
+<div class="container">
+    <div class="text-start">
         <h1>About</h1>
-        <p style="font-size:1.4em; max-width:40rem; line-height: 2.6rem;" class="mx-auto">
-            Swirl is a general purpose, high level programming language.
-            Some of the main features of it are static typing, object-oriented, functional etc.
+        <p style="font-size:1.4em; max-width:40rem; line-height: 2.3rem;" class="">
+            Swirl is a programming language that focuses on writing elegant and readable code. It is a statically typed language with a syntax similar to Python. Swirl is designed to be easy to learn and use, and is a great starting point for beginners.
         </p>
     </div>
-    <h2>Team</h2>
-    <div class="member-grid mx-auto mt-4">
+    <h2 class="mt-5">Meet the team</h2>
+    <div class="member-grid mt-4">
         {#each members as member}
-            <div class="w-75 mx-auto">
+            <div class="">
                 <Member {...member} />
             </div>
         {/each}
@@ -47,8 +46,9 @@
 <style lang="scss">
 .member-grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    row-gap: 1rem;
+    gap: 2rem;
     &>*{
         flex-basis:300px
     }

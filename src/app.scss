@@ -2,6 +2,7 @@
 body {
     background-color: $bg-color !important;
     overflow-x: hidden;
+    font-family: Poppins;
 }
 [data-scroll] {
     opacity: 0;
@@ -71,7 +72,7 @@ html {
     background: rgb(185, 185, 185);
 }
 
-input {
+input, textarea {
     color-scheme: dark;
 }
 

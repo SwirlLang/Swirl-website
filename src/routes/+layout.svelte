@@ -1,7 +1,20 @@
 <script>
     import "../app.scss";
-    import { page } from "$app/stores";
-    $: path = $page.url.pathname.substr($page.url.pathname.lastIndexOf("/"));
+    // import { onMount } from "svelte";
+    // onMount(() => {
+    //     gsap.registerPlugin(ScrollTrigger);
+    //     const tl = gsap.timeline({ defaults: { ease: "power1.out" }, scrollTrigger: { markers:true } });
+
+    //     gsap.to("h2", {
+    //         scrollTrigger: {
+    //             trigger: "h2",
+    //             toggleActions: "play none reverse none",
+    //         },
+    //         rotation: 360,
+    //         duration: 1,
+    //         stagger: 0.1,
+    //     });
+    // });
 </script>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -25,19 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto me-3 text-center">
                 <li class="nav-item">
-                    <a
-                        class="nav-link {path === '/about' ? 'active' : ''}"
-                        href="/about">About</a>
+                    <a class="nav-link" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a
-                        class="nav-link {path === '/contact' ? 'active' : ''}"
-                        href="/contact">Contact</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a
-                        class="nav-link {path === '/download' ? 'active' : ''}"
-                        href="/download">Download</a>
+                    <a class="nav-link" href="/download">Download</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/docs">Docs</a>
@@ -62,22 +69,13 @@
 
             <!-- Right -->
             <div class="social-media">
-                <a
-                    href="/discord"
-                    target="_blank"
-                    class="text-white">
+                <a href="/discord" target="_blank" class="text-white">
                     <i class="bi bi-discord" />
                 </a>
-                <a
-                    href="/github"
-                    target="_blank"
-                    class="text-white">
+                <a href="/github" target="_blank" class="text-white">
                     <i class="bi bi-github" />
                 </a>
-                <a
-                    href="/twitter"
-                    target="_blank"
-                    class="text-white">
+                <a href="/twitter" target="_blank" class="text-white">
                     <i class="bi bi-twitter" />
                 </a>
             </div>
@@ -87,102 +85,95 @@
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-        <div class="container-lg text-center text-md-start mt-5">
-            <div class="row mt-3">
-                <div
-                    class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-section">
-                    <h6 class="text-uppercase fw-bold">Swirl</h6>
-                    <hr class="header-sep" />
-                    <p class="mx-auto" style="max-width: 21rem;">
-                        A high level, compiled, statically typed,
-                        object-oriented programming language.
-                    </p>
-                </div>
-                <div
-                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
-                    <h6 class="text-uppercase fw-bold">Info</h6>
-                    <hr class="header-sep" />
+    <div class="container-lg text-center text-md-start mt-5">
+        <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-section">
+                <h6 class="text-uppercase fw-bold">Swirl</h6>
+                <hr class="header-sep" />
+                <p class="mx-auto" style="max-width: 21rem;">
+                    A programming language that focuses on writing elegant and readable code.
+                </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
+                <h6 class="text-uppercase fw-bold">Info</h6>
+                <hr class="header-sep" />
 
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="/about" class="text-dark">About</a>
-                        </li>
-                        <li>
-                            <a href="/contact" class="text-dark">Contact</a>
-                        </li>
-                        <li>
-                            <a href="/privacy-policy" class="text-dark"
-                                >Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="/terms-of-service" class="text-dark"
-                                >Terms of service</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
-                    <h6 class="text-uppercase fw-bold">Download</h6>
-                    <hr class="header-sep" />
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="/about" class="text-dark">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="text-dark">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy" class="text-dark"
+                            >Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-service" class="text-dark"
+                            >Terms of service</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
+                <h6 class="text-uppercase fw-bold">Download</h6>
+                <hr class="header-sep" />
 
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="/download/linux" class="text-dark"
-                                >Linux</a>
-                        </li>
-                        <li>
-                            <a href="/download/mac-os" class="text-dark"
-                                >Mac OS</a>
-                        </li>
-                        <li>
-                            <a href="/download/windows" class="text-dark"
-                                >Windows</a>
-                        </li>
-                        <li>
-                            <a href="/download/source-code" class="text-dark"
-                                >Source Code</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
-                    <h6 class="text-uppercase fw-bold">Resources</h6>
-                    <hr class="header-sep" />
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/download/linux" class="text-dark">Linux</a>
+                    </li>
+                    <li>
+                        <a href="/download/mac-os" class="text-dark">Mac OS</a>
+                    </li>
+                    <li>
+                        <a href="/download/windows" class="text-dark"
+                            >Windows</a>
+                    </li>
+                    <li>
+                        <a href="/download/source-code" class="text-dark"
+                            >Source Code</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
+                <h6 class="text-uppercase fw-bold">Resources</h6>
+                <hr class="header-sep" />
 
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="/docs" class="text-dark">Docs</a>
-                        </li>
-                        <li>
-                            <a href="/docs/#getting-started" class="text-dark"
-                                >Getting started</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 footer-section">
-                    <h6 class="text-uppercase fw-bold">Support</h6>
-                    <hr class="header-sep" />
-                    <ul class="list-unstyled">
-                        <li>
-                            <a
-                                href="https://github.com/SwirlLang/Swirl/issues"
-                                class="text-dark">GitHub Issues</a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://github.com/SwirlLang/Swirl/discussions"
-                                class="text-dark">Forum</a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://discord.gg/RSJ5TUDdqx"
-                                class="text-dark">Discord server</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="/docs" class="text-dark">Docs</a>
+                    </li>
+                    <li>
+                        <a href="/docs/#getting-started" class="text-dark"
+                            >Getting started</a>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 footer-section">
+                <h6 class="text-uppercase fw-bold">Support</h6>
+                <hr class="header-sep" />
+                <ul class="list-unstyled">
+                    <li>
+                        <a
+                            href="https://github.com/SwirlLang/Swirl/issues"
+                            class="text-dark">GitHub Issues</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/SwirlLang/Swirl/discussions"
+                            class="text-dark">Forum</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://discord.gg/RSJ5TUDdqx"
+                            class="text-dark">Discord server</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
     <!-- Section: Links  -->
 
     <!-- Copyright -->
@@ -252,7 +243,7 @@
             a {
                 color: white !important;
                 font-size: 1.3em;
-    
+
                 &:hover {
                     color: #bbbbbb !important;
                 }
@@ -264,7 +255,7 @@
             &:hover {
                 color: #bbbbbb !important;
                 img {
-                    opacity: .8;
+                    opacity: 0.8;
                 }
             }
         }
@@ -273,11 +264,6 @@
             transition: 0.2s;
             position: relative;
             overflow-y: hidden;
-            &.active {
-                &:after {
-                    transform: translateY(0%);
-                }
-            }
         }
         @media screen and (max-width: 768px) {
             .nav-link {
