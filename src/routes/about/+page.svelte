@@ -25,7 +25,7 @@
 </script>
 
 <div class="spacer" />
-<div class="container">
+<div class="container px-4">
     <div class="text-start">
         <h1>About</h1>
         <p style="font-size:1.4em; max-width:40rem; line-height: 2.3rem;" class="">

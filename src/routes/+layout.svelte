@@ -1,20 +1,46 @@
 <script>
     import "../app.scss";
-    // import { onMount } from "svelte";
-    // onMount(() => {
-    //     gsap.registerPlugin(ScrollTrigger);
-    //     const tl = gsap.timeline({ defaults: { ease: "power1.out" }, scrollTrigger: { markers:true } });
-
-    //     gsap.to("h2", {
-    //         scrollTrigger: {
-    //             trigger: "h2",
-    //             toggleActions: "play none reverse none",
-    //         },
-    //         rotation: 360,
-    //         duration: 1,
-    //         stagger: 0.1,
-    //     });
-    // });
+    import { onMount } from "svelte";
+    onMount(() => {
+        gsap.fromTo(".feature-icon", {
+            opacity: 0,
+            translateY: 50
+        }, {
+            scrollTrigger: {
+                trigger: ".feature-icon",
+                start: "top center",
+            },
+            opacity: 1,
+            translateY: 0,
+            duration: .4,
+            stagger: 0.1,
+        });
+        gsap.to(".header-image", {
+            // create a parrallax effect
+            scrollTrigger: {
+                trigger: ".header-image",
+                start: "100px center",
+                end: "500px center",
+                scrub: 1,
+                // markers: true
+            },
+            y: -100,
+            opacity: .1,
+            duration: 3,
+        })
+        gsap.to(".hero", {
+            // animate a linear gradient
+            scrollTrigger: {
+                trigger: ".hero",
+                start: "center-=10% center",
+                end: "bottom center",
+                scrub: 1,
+                // markers: true
+            },
+            background: "linear-gradient(0deg, #1b0066, #000000)",
+            duration: 3,
+        })
+    });
 </script>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -200,6 +226,11 @@
 </footer>
 
 <style lang="scss">
+    .navbar {
+        @media screen and (max-width: 576px) {
+            padding: 0.3rem;
+        }
+    }
     .header-sep {
         margin-bottom: 1.5rem !important;
         margin-top: 0 !important;

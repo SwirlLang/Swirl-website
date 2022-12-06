@@ -1,5 +1,5 @@
 <div class="spacer" />
-<div class="container">
+<div class="container px-4">
     <h1>Downloads</h1>
     <h3 class="text-muted">Swirl alpha</h3>
     <p>Download Swirl for your operating system</p>
@@ -31,8 +31,8 @@
         </div>
     </div>
     <div class="mt-3 mb-5">
-        <p><i class="bi bi-box-arrow-up-right"></i> <a href="/docs/getting-started/installation">Install instructions</a></p>
-        <p><i class="bi bi-box-arrow-up-right"></i> <a href="https://github.com/SwirlLang/Swirl/releases">Archived versions</a></p>
+        <p><i class="bi bi-box-arrow-up-right"></i> <a class="link-light" href="/docs/getting-started/installation">Install instructions</a></p>
+        <p><i class="bi bi-box-arrow-up-right"></i> <a class="link-light" href="https://github.com/SwirlLang/Swirl/releases">Archived versions</a></p>
     </div>
     <div class="row">
         <div class="col-4">

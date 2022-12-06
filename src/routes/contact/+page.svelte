@@ -84,15 +84,10 @@
     input,
     textarea {
         resize: none;
-        border: 1px solid $dark-1;
-        border-radius: 0.3rem;
-        &~label {
-            color: rgba(187, 187, 187, 0.904) !important;
-        }
     }
     .form-outline .form-control {
         & ~ .form-notch div {
-            border: 1px solid #4b00e0b2;
+            border: 1px solid $dark-1;
         }
     }
 </style>
