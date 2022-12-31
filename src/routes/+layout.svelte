@@ -2,19 +2,6 @@
     import "../app.scss";
     import { onMount } from "svelte";
     onMount(() => {
-        gsap.fromTo(".feature-icon", {
-            opacity: 0,
-            translateY: 50
-        }, {
-            scrollTrigger: {
-                trigger: ".feature-icon",
-                start: "top center",
-            },
-            opacity: 1,
-            translateY: 0,
-            duration: .4,
-            stagger: 0.1,
-        });
         gsap.to(".header-image", {
             // create a parrallax effect
             scrollTrigger: {
@@ -25,9 +12,9 @@
                 // markers: true
             },
             y: -100,
-            opacity: .1,
+            opacity: 0.1,
             duration: 3,
-        })
+        });
         gsap.to(".hero", {
             // animate a linear gradient
             scrollTrigger: {
@@ -39,7 +26,7 @@
             },
             background: "linear-gradient(0deg, #1b0066, #000000)",
             duration: 3,
-        })
+        });
     });
 </script>
 
@@ -49,6 +36,7 @@
             ><img
                 src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png"
                 class="me-3 rounded-1"
+                width="35"
                 height="35"
                 alt="Swirl Logo" />Swirl</a>
         <button
@@ -95,13 +83,25 @@
 
             <!-- Right -->
             <div class="social-media">
-                <a href="/discord" target="_blank" class="text-white">
+                <a
+                    href="/discord"
+                    target="_blank"
+                    class="text-white"
+                    aria-label="discord server invite">
                     <i class="bi bi-discord" />
                 </a>
-                <a href="/github" target="_blank" class="text-white">
+                <a
+                    href="/github"
+                    target="_blank"
+                    class="text-white"
+                    aria-label="github account link">
                     <i class="bi bi-github" />
                 </a>
-                <a href="/twitter" target="_blank" class="text-white">
+                <a
+                    href="/twitter"
+                    target="_blank"
+                    class="text-white"
+                    aria-label="twitter account link">
                     <i class="bi bi-twitter" />
                 </a>
             </div>
@@ -114,14 +114,15 @@
     <div class="container-lg text-center text-md-start mt-5">
         <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 footer-section">
-                <h6 class="text-uppercase fw-bold">Swirl</h6>
+                <h3 class="text-uppercase fw-bold fs-6">Swirl</h3>
                 <hr class="header-sep" />
                 <p class="mx-auto" style="max-width: 21rem;">
-                    A programming language that focuses on writing elegant and readable code.
+                    A programming language that focuses on writing elegant and
+                    readable code.
                 </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
-                <h6 class="text-uppercase fw-bold">Info</h6>
+                <h3 class="text-uppercase fw-bold fs-6">Info</h3>
                 <hr class="header-sep" />
 
                 <ul class="list-unstyled mb-0">
@@ -142,7 +143,7 @@
                 </ul>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
-                <h6 class="text-uppercase fw-bold">Download</h6>
+                <h3 class="text-uppercase fw-bold fs-6">Download</h3>
                 <hr class="header-sep" />
 
                 <ul class="list-unstyled">
@@ -163,7 +164,7 @@
                 </ul>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
-                <h6 class="text-uppercase fw-bold">Resources</h6>
+                <h3 class="text-uppercase fw-bold fs-6">Resources</h3>
                 <hr class="header-sep" />
 
                 <ul class="list-unstyled mb-0">
@@ -178,7 +179,7 @@
             </div>
             <div
                 class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 footer-section">
-                <h6 class="text-uppercase fw-bold">Support</h6>
+                <h3 class="text-uppercase fw-bold fs-6">Support</h3>
                 <hr class="header-sep" />
                 <ul class="list-unstyled">
                     <li>
@@ -219,7 +220,7 @@
                 <img
                     alt="Powered by Vercel"
                     src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-                    height="32" /></a>
+                    width="154" height="32" /></a>
         </div>
     </div>
     <!-- Copyright -->

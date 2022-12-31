@@ -26,16 +26,16 @@
         </div>
         <div
             class="col-12 col-lg-6 d-flex text-center pt-3 pt-lg-0 align-items-start align-items-lg-center mt-3">
-            <div class="container-fluid">
+            <div class="container-fluid" style="width: 500px">
                 <img
                     src="swirl-demo.png"
                     alt="demo code"
                     class="img-fluid header-image"
-                    width="500" />
+                    width="794" height="300" />
             </div>
         </div>
     </div>
-    <a href="#content" class="indicate-scroll">
+    <a href="#content" class="indicate-scroll" aria-label="Indicator for scrolling">
         <i class="bi bi-chevron-double-down text-light d-inline-block" />
     </a>
 </div>
@@ -50,7 +50,7 @@
                     Swirl compiles to C++, never letting you down on performance. Sit back and enjoy the performance.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
+                    >Know more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-code-slash feature-icon d-inline-block" />
@@ -60,7 +60,7 @@
                     obejct oriented etc.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
+                    >Know more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-journal-text feature-icon d-inline-block" />
@@ -70,7 +70,7 @@
                     Most of the heavy lifting can be done by the standard library.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
+                    >Know more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-cpu feature-icon d-inline-block" />
@@ -80,7 +80,7 @@
                     So that you don't have to worry about it.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
+                    >Know more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-tools feature-icon d-inline-block" />
@@ -90,7 +90,7 @@
                     Swirl is a compiled language, with the features like static typing, readable syntax resulting in less bugs. Making it reliable and easier to maintain.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
+                    >Know more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-laptop feature-icon d-inline-block" />
@@ -99,7 +99,7 @@
                     Swirl is available for all major platforms. You can use it on Windows, Linux, MacOS.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
+                    >Know more <i class="bi bi-arrow-right-circle" /></a>
             </div>
         </div>
     </div>
