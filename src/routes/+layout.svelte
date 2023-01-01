@@ -220,7 +220,9 @@
                 <img
                     alt="Powered by Vercel"
                     src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-                    width="154" height="32" /></a>
+                    width="154"
+                    height="32"
+                    loading="lazy"/></a>
         </div>
     </div>
     <!-- Copyright -->

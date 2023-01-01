@@ -31,7 +31,8 @@
                     src="swirl-demo.png"
                     alt="demo code"
                     class="img-fluid header-image"
-                    width="794" height="300" />
+                    width="794" height="300" 
+                    loading="lazy"/>
             </div>
         </div>
     </div>
