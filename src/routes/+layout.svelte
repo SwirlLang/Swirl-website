@@ -1,33 +1,5 @@
 <script>
     import "../app.scss";
-    import { onMount } from "svelte";
-    onMount(() => {
-        gsap.to(".header-image", {
-            // create a parrallax effect
-            scrollTrigger: {
-                trigger: ".header-image",
-                start: "100px center",
-                end: "500px center",
-                scrub: 1,
-                // markers: true
-            },
-            y: -100,
-            opacity: 0.1,
-            duration: 3,
-        });
-        gsap.to(".hero", {
-            // animate a linear gradient
-            scrollTrigger: {
-                trigger: ".hero",
-                start: "center-=10% center",
-                end: "bottom center",
-                scrub: 1,
-                // markers: true
-            },
-            background: "linear-gradient(0deg, #1b0066, #000000)",
-            duration: 3,
-        });
-    });
 </script>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -208,7 +180,7 @@
         class="text-center text-md-start py-3"
         style="background-color: rgba(0, 0, 0, 0.2); color: #bbb">
         <div class="container-lg">
-            Made with <i class="bi bi-heart-fill text-danger" /> by
+            Made with <i class="bi bi-heart-fill" style="color: rgb(249,49,84)" /> by
             <a class="text-white" href="https://github.com/mrinmoyhaloi"
                 >Mrinmoy Haloi</a>
             <br />
@@ -245,6 +217,7 @@
         height: 2px;
         opacity: 0.5;
         transition: 0.5s;
+        border-top: none;
     }
     .footer-section:hover {
         .header-sep {

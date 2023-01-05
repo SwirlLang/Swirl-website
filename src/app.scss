@@ -6,7 +6,7 @@ body {
 }
 
 html {
-    scroll-padding-top: 58px;
+    scroll-padding-top: 62px;
 }
 .spacer {
     padding-bottom: 7rem;
@@ -19,7 +19,7 @@ html {
 }
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 /* Track */
@@ -53,4 +53,13 @@ input, textarea {
     &:focus {
         background-color: rgb(86, 38, 182);
     }
+}
+
+.btn {
+    box-shadow: none;
+}
+
+.btn-primary:first-child:hover, .btn-primary:focus-visible, .btn-primary:hover, :not(.btn-check)+.btn-primary:hover {
+    box-shadow: 0 8px 9px -4px rgb(74 0 224 / 30%), 0 4px 18px 0 rgb(74 0 224 / 20%);
+    background-color: #540de2;
 }

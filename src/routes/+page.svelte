@@ -1,4 +1,32 @@
 <script>
+import { onMount } from "svelte";
+onMount(() => {
+    gsap.to(".header-image", {
+        // create a parrallax effect
+        scrollTrigger: {
+            trigger: ".header-image",
+            start: "100px center",
+            end: "500px center",
+            scrub: 1,
+            // markers: true
+        },
+        y: -100,
+        opacity: 0.1,
+        duration: 3,
+    });
+    gsap.to(".hero", {
+        // animate a linear gradient
+        scrollTrigger: {
+            trigger: ".hero",
+            start: "center-=10% center",
+            end: "bottom center",
+            scrub: 1,
+            // markers: true
+        },
+        background: "linear-gradient(0deg, #1b0066, #000000)",
+        duration: 3,
+    });
+});
 </script>
 
 <div class="container-fluid hero vh-100">
@@ -20,7 +48,9 @@
                     A programming language that focuses on writing elegant and
                     readable code. Make writing code enjoyable <i>again</i>.
                 </p>
-                <a class="btn btn-primary btn-rounded download-btn me-2" href="/download">Download</a>
+                <a
+                    class="btn btn-primary btn-rounded download-btn me-2"
+                    href="/download">Download</a>
                 <a class="btn btn-dark btn-rounded" href="/docs">Get started</a>
             </div>
         </div>
@@ -31,12 +61,16 @@
                     src="swirl-demo.png"
                     alt="demo code"
                     class="img-fluid header-image"
-                    width="794" height="300" 
-                    loading="lazy"/>
+                    width="794"
+                    height="300"
+                    loading="lazy" />
             </div>
         </div>
     </div>
-    <a href="#content" class="indicate-scroll" aria-label="Indicator for scrolling">
+    <a
+        href="#content"
+        class="indicate-scroll"
+        aria-label="Indicator for scrolling">
         <i class="bi bi-chevron-double-down text-light d-inline-block" />
     </a>
 </div>
@@ -48,7 +82,8 @@
                 <i class="bi bi-lightning-charge feature-icon d-inline-block" />
                 <p>Performance</p>
                 <p>
-                    Swirl compiles to C++, never letting you down on performance. Sit back and enjoy the performance.
+                    Swirl compiles to C++, never letting you down on
+                    performance. Sit back and enjoy the performance.
                 </p>
                 <a href="/docs" class="link-light"
                     >Know more <i class="bi bi-arrow-right-circle" /></a>
@@ -57,8 +92,8 @@
                 <i class="bi bi-code-slash feature-icon d-inline-block" />
                 <p>Syntax</p>
                 <p>
-                    Develop faster with a clean and concise syntax. Enjoy the features like static typing,
-                    obejct oriented etc.
+                    Develop faster with a clean and concise syntax. Enjoy the
+                    features like static typing, obejct oriented etc.
                 </p>
                 <a href="/docs" class="link-light"
                     >Know more <i class="bi bi-arrow-right-circle" /></a>
@@ -67,8 +102,8 @@
                 <i class="bi bi-journal-text feature-icon d-inline-block" />
                 <p>Std Lib</p>
                 <p>
-                    Enjoy the diversity of the standard library.
-                    Most of the heavy lifting can be done by the standard library.
+                    Enjoy the diversity of the standard library. Most of the
+                    heavy lifting can be done by the standard library.
                 </p>
                 <a href="/docs" class="link-light"
                     >Know more <i class="bi bi-arrow-right-circle" /></a>
@@ -88,7 +123,9 @@
                 <p>Reliable</p>
                 <p>
                     <!-- write something for reliable -->
-                    Swirl is a compiled language, with the features like static typing, readable syntax resulting in less bugs. Making it reliable and easier to maintain.
+                    Swirl is a compiled language, with the features like static typing,
+                    readable syntax resulting in less bugs. Making it reliable and
+                    easier to maintain.
                 </p>
                 <a href="/docs" class="link-light"
                     >Know more <i class="bi bi-arrow-right-circle" /></a>
@@ -97,7 +134,8 @@
                 <i class="bi bi-laptop feature-icon d-inline-block" />
                 <p>Cross platform</p>
                 <p>
-                    Swirl is available for all major platforms. You can use it on Windows, Linux, MacOS.
+                    Swirl is available for all major platforms. You can use it
+                    on Windows, Linux, MacOS.
                 </p>
                 <a href="/docs" class="link-light"
                     >Know more <i class="bi bi-arrow-right-circle" /></a>
@@ -109,7 +147,7 @@
 <style lang="scss">
     .download-btn {
         @media screen and (max-width: 327px) {
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
         }
     }
     .news-alert {
@@ -154,7 +192,7 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
         gap: 2rem;
-        padding-inline: .5rem;
+        padding-inline: 0.5rem;
         .feature {
             & > i {
                 font-size: 5rem;
@@ -175,7 +213,7 @@
             }
             & :nth-child(4) {
                 display: flex;
-                gap: .3rem;
+                gap: 0.3rem;
                 i {
                     font-size: 1.2rem;
                 }
