@@ -1,32 +1,32 @@
 <script>
-import { onMount } from "svelte";
-onMount(() => {
-    gsap.to(".header-image", {
-        // create a parrallax effect
-        scrollTrigger: {
-            trigger: ".header-image",
-            start: "100px center",
-            end: "500px center",
-            scrub: 1,
-            // markers: true
-        },
-        y: -100,
-        opacity: 0.1,
-        duration: 3,
+    import { onMount } from "svelte";
+    onMount(() => {
+        gsap.to(".header-image", {
+            // create a parrallax effect
+            scrollTrigger: {
+                trigger: ".header-image",
+                start: "100px center",
+                end: "500px center",
+                scrub: 1,
+                // markers: true
+            },
+            y: -100,
+            opacity: 0.1,
+            duration: 3,
+        });
+        gsap.to(".hero", {
+            // animate a linear gradient
+            scrollTrigger: {
+                trigger: ".hero",
+                start: "center-=10% center",
+                end: "bottom center",
+                scrub: 1,
+                // markers: true
+            },
+            background: "linear-gradient(0deg, #1b0066, #000000)",
+            duration: 3,
+        });
     });
-    gsap.to(".hero", {
-        // animate a linear gradient
-        scrollTrigger: {
-            trigger: ".hero",
-            start: "center-=10% center",
-            end: "bottom center",
-            scrub: 1,
-            // markers: true
-        },
-        background: "linear-gradient(0deg, #1b0066, #000000)",
-        duration: 3,
-    });
-});
 </script>
 
 <div class="container-fluid hero vh-100">
@@ -49,9 +49,10 @@ onMount(() => {
                     readable code. Make writing code enjoyable <i>again</i>.
                 </p>
                 <a
-                    class="btn btn-primary btn-rounded download-btn me-2"
+                    class="btn btn-primary rounded-pill download-btn me-2"
                     href="/download">Download</a>
-                <a class="btn btn-dark btn-rounded" href="/docs">Get started</a>
+                <a class="btn btn-dark rounded-pill" href="/docs"
+                    >Get started</a>
             </div>
         </div>
         <div
@@ -80,7 +81,7 @@ onMount(() => {
         <div class="features-grid">
             <div class="feature">
                 <i class="bi bi-lightning-charge feature-icon d-inline-block" />
-                <p>Performance</p>
+                <h3>Performance</h3>
                 <p>
                     Swirl compiles to C++, never letting you down on
                     performance. Sit back and enjoy the performance.
@@ -90,7 +91,7 @@ onMount(() => {
             </div>
             <div class="feature">
                 <i class="bi bi-code-slash feature-icon d-inline-block" />
-                <p>Syntax</p>
+                <h3>Syntax</h3>
                 <p>
                     Develop faster with a clean and concise syntax. Enjoy the
                     features like static typing, obejct oriented etc.
@@ -100,7 +101,7 @@ onMount(() => {
             </div>
             <div class="feature">
                 <i class="bi bi-journal-text feature-icon d-inline-block" />
-                <p>Std Lib</p>
+                <h3>Std Lib</h3>
                 <p>
                     Enjoy the diversity of the standard library. Most of the
                     heavy lifting can be done by the standard library.
@@ -110,7 +111,7 @@ onMount(() => {
             </div>
             <div class="feature">
                 <i class="bi bi-cpu feature-icon d-inline-block" />
-                <p>Memory Safe</p>
+                <h3>Memory Safe</h3>
                 <p>
                     Write code comfortably, Swirl takes care of memory for you.
                     So that you don't have to worry about it.
@@ -120,7 +121,7 @@ onMount(() => {
             </div>
             <div class="feature">
                 <i class="bi bi-tools feature-icon d-inline-block" />
-                <p>Reliable</p>
+                <h3>Reliable</h3>
                 <p>
                     <!-- write something for reliable -->
                     Swirl is a compiled language, with the features like static typing,
@@ -132,7 +133,7 @@ onMount(() => {
             </div>
             <div class="feature">
                 <i class="bi bi-laptop feature-icon d-inline-block" />
-                <p>Cross platform</p>
+                <h3>Cross platform</h3>
                 <p>
                     Swirl is available for all major platforms. You can use it
                     on Windows, Linux, MacOS.

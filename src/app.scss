@@ -1,6 +1,6 @@
 /* global styles are written here, in SCSS syntax. Variables and mixins from src/variables.scss are automatically imported*/
+
 body {
-    background-color: $bg-color !important;
     overflow-x: hidden;
     font-family: Poppins;
 }
@@ -8,15 +8,11 @@ body {
 html {
     scroll-padding-top: 62px;
 }
+
 .spacer {
     padding-bottom: 7rem;
 }
-.link-light {
-    color: #fbfbfb !important;
-    &:hover {
-        color: #d3d3d3 !important;
-    }
-}
+
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -41,25 +37,4 @@ html {
 
 input, textarea {
     color-scheme: dark;
-}
-
-// bootstrap changes
-.btn-primary {
-    background-color: $primary;
-    color: #fff;
-    &:hover {
-        background-color: rgb(60, 0, 180);
-    }
-    &:focus {
-        background-color: rgb(86, 38, 182);
-    }
-}
-
-.btn {
-    box-shadow: none;
-}
-
-.btn-primary:first-child:hover, .btn-primary:focus-visible, .btn-primary:hover, :not(.btn-check)+.btn-primary:hover {
-    box-shadow: 0 8px 9px -4px rgb(74 0 224 / 30%), 0 4px 18px 0 rgb(74 0 224 / 20%);
-    background-color: #540de2;
 }

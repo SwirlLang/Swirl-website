@@ -1,10 +1,8 @@
 <div class="spacer" />
 <div class="container text-center">
-    <h1>
-        Thanks for submitting
-    </h1>
+    <h1>Thanks for submitting</h1>
     <p>Your response has been submitted</p>
-    <a href="/" class="btn btn-primary btn-rounded">go back</a>
+    <a href="/" class="btn btn-primary rounded-pill">go back</a>
 </div>
 <div class="spacer" />
 <div class="spacer" />

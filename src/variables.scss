@@ -1,7 +1,13 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
+/* Override Bootstrap's variables here */
+
 $dark-1: #272727;
 $dark-2: #1d1d1d;
 $dark-3: #131313;
 $bg-color: #0f0f0f;
 $fg-color: white;
-$primary: #4a00e0
+
+$primary: #4a00e0;
+$body-bg-dark: $bg-color;
+$body-color-dark: #fff;
+$primary-bg-subtle-dark: #19004a;

@@ -1,12 +1,10 @@
 const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
 
 const config = {
     plugins: [
         autoprefixer,
-        require("cssnano")({
-            autoprefixer: false,
-            preset: "default",
-        }),
+        cssnano({ autoprefixer: false, preset: "default" }),
     ],
 };
 

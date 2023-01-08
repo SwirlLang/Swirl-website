@@ -12,7 +12,10 @@
     <div class="mt-4">
         <h5 class="card-title">{name}</h5>
         <p class="card-text" style="color: #bbb">{tagline}</p>
-        <a href="https://github.com/{github}" class="btn btn-primary btn-rounded"><i class="bi bi-box-arrow-up-right"></i> GitHub</a>
+        <a
+            href="https://github.com/{github}"
+            class="btn btn-primary rounded-pill"
+            ><i class="bi bi-box-arrow-up-right" /> GitHub</a>
     </div>
 </div>
 

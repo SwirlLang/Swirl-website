@@ -1,5 +1,11 @@
 <script>
+    import "../bootstrap.scss";
     import "../app.scss";
+    import { onMount } from "svelte";
+    
+    onMount(async () => {
+        await import("../bootstrap.js");
+    });
 </script>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -12,10 +18,10 @@
                 height="35"
                 alt="Swirl Logo" />Swirl</a>
         <button
-            class="navbar-toggler pe-3"
+            class="navbar-toggler"
             type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarNavAltMarkup"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation">
@@ -180,7 +186,10 @@
         class="text-center text-md-start py-3"
         style="background-color: rgba(0, 0, 0, 0.2); color: #bbb">
         <div class="container-lg">
-            Made with <i class="bi bi-heart-fill" style="color: rgb(249,49,84)" /> by
+            Made with <i
+                class="bi bi-heart-fill"
+                style="color: rgb(249,49,84)" />
+            by
             <a class="text-white" href="https://github.com/mrinmoyhaloi"
                 >Mrinmoy Haloi</a>
             <br />
@@ -194,7 +203,7 @@
                     src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
                     width="154"
                     height="32"
-                    loading="lazy"/></a>
+                    loading="lazy" /></a>
         </div>
     </div>
     <!-- Copyright -->
