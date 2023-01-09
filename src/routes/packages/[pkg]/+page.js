@@ -1,21 +1,33 @@
-import { error } from '@sveltejs/kit';
+import { error } from "@sveltejs/kit";
+import { supabase } from "$lib/supabaseClient.js";
+
+async function getPackage(pkg) {
+    const { data, error } = await supabase
+        .from("package")
+        .select("*")
+        .eq("id", pkg);
+    if (error) throw new Error(error.message);
+
+    return data;
+}
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ params, fetch }) {
-    const res = await fetch(
-        "https://raw.githubusercontent.com/SwirlLang/spm/packages/packages.files"
-    );
-    const packages = await res.json();
-    // get the package from the list of packages using params.pkg
-    if (packages.find((pkg) => pkg.name === params.pkg)) {
-        let pkg = packages.find((pkg) => pkg.name === params.pkg);
-        return {
-                package: pkg,
-        };
-    }
-    else {
-        throw error(418, {
-            message: 'Package not found'
+export async function load({ params }) {
+    try {
+        const data = await getPackage(params.pkg);
+        if (data.length > 0) {
+            return {
+                package: data[0],
+            };
+        } else {
+            throw error(418, {
+                message: "Package not found",
+            });
+        }
+    } catch (err) {
+        console.log(err);
+        throw error(err.status, {
+            message: err.body.message,
         });
     }
 }

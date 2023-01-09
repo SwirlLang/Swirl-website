@@ -10,6 +10,7 @@
     "devDependencies": {
         "@sveltejs/adapter-auto": "^1.0.0",
         "@sveltejs/kit": "^1.0.1",
+        "@supabase/supabase-js": "^2.2.3",
         "autoprefixer": "^10.4.13",
         "bootstrap": "^5.3.0-alpha1",
         "cssnano": "^5.1.14",

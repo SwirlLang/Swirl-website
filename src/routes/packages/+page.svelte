@@ -30,18 +30,11 @@
             on:input={search_packages} />
         <!-- display the search results -->
         <div class="mt-4 w-auto mx-auto text-start packages">
-            <!-- <ul class="list-group bg-dark">
-                <li class="list-group-item text-light">An item</li>
-                <li class="list-group-item text-light">A second item</li>
-                <li class="list-group-item text-light">A third item</li>
-                <li class="list-group-item text-light">A fourth item</li>
-                <li class="list-group-item text-light">And a fifth one</li>
-            </ul> -->
             {#each results as pkg}
                 <div class="package">
-                    <a href="/packages/{pkg.name}" class="link-light">
+                    <a href="/packages/{pkg.id}" class="link-light">
                         <div>
-                            <p class="fw-bold mb-0">{pkg.name}</p>
+                            <p class="fw-bold mb-0">{pkg.id}</p>
                             <p class="text-muted">{pkg.description}</p>
                         </div>
                         <p>{pkg.version}</p>
@@ -80,7 +73,7 @@
     .packages {
         max-height: 20rem;
         overflow-y: scroll;
-        padding-inline: .3rem;
+        padding-inline: 0.3rem;
         .package {
             margin-bottom: 1rem;
             border-radius: 1rem;

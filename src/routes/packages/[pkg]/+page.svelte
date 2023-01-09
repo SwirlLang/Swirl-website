@@ -3,23 +3,23 @@
     export let data;
     let pkg = data.package;
     function copyCommand() {
-        navigator.clipboard.writeText(`spm install ${pkg.name}`);
+        navigator.clipboard.writeText(`spm install ${pkg.id}`);
     }
 </script>
 
 <div class="spacer" />
 
 <div class="container">
-    <h1>{pkg.displayName}</h1>
-    <p class="text-muted">{pkg.name} - {pkg.version} - {pkg.author}</p>
+    <h1>{pkg.name}</h1>
+    <p class="text-muted">{pkg.id} - {pkg.version} - {pkg.author}</p>
     <div class="btn-group install-command mb-1">
-        <code>spm install {pkg.name}</code>
+        <code>spm install {pkg.id}</code>
         <button class="btn-clipboard" on:click={copyCommand}
             ><i class="bi bi-clipboard text-light" /></button>
     </div>
     <p>{pkg.description}</p>
     <a
-        href={pkg.upstreamURL}
+        href={pkg.url}
         target="_blank"
         rel="noreferrer"
         class="link-light"

@@ -1,9 +1,15 @@
+import { supabase } from "$lib/supabaseClient.js";
+    
+async function getData() {
+    const { data, error } = await supabase.from("package").select("*");
+    if (error) throw new Error(error.message);
+
+    return data;
+}
+
 /** @type {import('./$types').PageLoad} */
-export async function load({ fetch }) {
-    const res = await fetch(
-        "https://raw.githubusercontent.com/SwirlLang/spm/packages/packages.files"
-    );
-    const packages = await res.json();
+export async function load({ }) {
+    const packages = await getData();
     return {
         packages: packages,
     };
