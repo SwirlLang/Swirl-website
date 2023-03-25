@@ -41,17 +41,17 @@
                 <img src="/linux.svg" alt="Linux icon" style="width: 25px" />
                 Linux
             </h3>
-            <a href="{data.release.assets[0].browser_download_url}" class="text-light download-btn"
+            <a href="{data.release.assets[4].browser_download_url}" class="text-light download-btn"
                 ><i class="bi bi-download me-2" /> binary {formatBytes(data.release.assets[0].size)}</a>
         </div>
         <div class="col">
             <h3 class="mb-3"><i class="bi bi-apple" /> Mac OS</h3>
-            <a href="{data.release.assets[1].browser_download_url}" class="text-light download-btn"
+            <a href="{data.release.assets[5].browser_download_url}" class="text-light download-btn"
                 ><i class="bi bi-download me-2" /> binary {formatBytes(data.release.assets[1].size)}</a>
         </div>
         <div class="col">
             <h3 class="mb-3"><i class="bi bi-windows" /> Windows</h3>
-            <a href="{data.release.assets[2].browser_download_url}" class="text-light download-btn"
+            <a href="{data.release.assets[6].browser_download_url}" class="text-light download-btn"
                 ><i class="bi bi-download me-2" /> exe {formatBytes(data.release.assets[2].size)}</a>
         </div>
         <div class="col">
