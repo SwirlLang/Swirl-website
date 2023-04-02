@@ -2,7 +2,7 @@
     import "../bootstrap.scss";
     import "../app.scss";
     import { onMount } from "svelte";
-    
+
     onMount(async () => {
         await import("../bootstrap.js");
     });
@@ -12,7 +12,7 @@
     <div class="container-fluid">
         <a class="ps-3 navbar-brand" href="/"
             ><img
-                src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/Swirl-monogram-logo.png"
+                src="https://raw.githubusercontent.com/SwirlLang/branding/main/logos/logo-transparent.png"
                 class="me-3 rounded-1"
                 width="35"
                 height="35"
@@ -95,8 +95,8 @@
                 <h3 class="text-uppercase fw-bold fs-6">Swirl</h3>
                 <hr class="header-sep" />
                 <p class="mx-auto" style="max-width: 21rem;">
-                    A programming language that focuses on writing elegant and
-                    readable code.
+                    A modern, beginner-friendly language that combines power,
+                    performance, and simplicity.
                 </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
@@ -110,14 +110,6 @@
                     <li>
                         <a href="/contact" class="text-dark">Contact</a>
                     </li>
-                    <li>
-                        <a href="/privacy-policy" class="text-dark"
-                            >Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="/terms-of-service" class="text-dark"
-                            >Terms of service</a>
-                    </li>
                 </ul>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-section">
@@ -126,18 +118,10 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="/download/linux" class="text-dark">Linux</a>
+                        <a href="/download" class="text-dark">Download page</a>
                     </li>
                     <li>
-                        <a href="/download/mac-os" class="text-dark">Mac OS</a>
-                    </li>
-                    <li>
-                        <a href="/download/windows" class="text-dark"
-                            >Windows</a>
-                    </li>
-                    <li>
-                        <a href="/download/source-code" class="text-dark"
-                            >Source Code</a>
+                        <a href="https://github.com/SwirlLang/Swirl/releases" class="text-dark">GitHub Releases</a>
                     </li>
                 </ul>
             </div>
@@ -150,7 +134,7 @@
                         <a href="/docs" class="text-dark">Docs</a>
                     </li>
                     <li>
-                        <a href="/docs/#getting-started" class="text-dark"
+                        <a href="/docs/getting-started" class="text-dark"
                             >Getting started</a>
                     </li>
                 </ul>

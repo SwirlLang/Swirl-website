@@ -45,13 +45,12 @@
                     <div>Better software.</div>
                 </h1>
                 <p>
-                    A programming language that focuses on writing elegant and
-                    readable code. Make writing code enjoyable <i>again</i>.
+                    A modern, beginner-friendly language that combines power, performance, and simplicity.
                 </p>
                 <a
                     class="btn btn-primary rounded-pill download-btn me-2"
                     href="/download">Download</a>
-                <a class="btn btn-dark rounded-pill" href="/docs"
+                <a class="btn btn-dark rounded-pill" href="/docs/getting-started"
                     >Get started</a>
             </div>
         </div>
@@ -123,7 +122,6 @@
                 <i class="bi bi-tools feature-icon d-inline-block" />
                 <h3>Reliable</h3>
                 <p>
-                    <!-- write something for reliable -->
                     Swirl is a compiled language, with the features like static typing,
                     readable syntax resulting in less bugs. Making it reliable and
                     easier to maintain.
@@ -138,7 +136,7 @@
                     Swirl is available for all major platforms. You can use it
                     on Windows, Linux, MacOS.
                 </p>
-                <a href="/docs" class="link-light"
+                <a href="/download" class="link-light"
                     >Know more <i class="bi bi-arrow-right-circle" /></a>
             </div>
         </div>
