@@ -1,4 +1,5 @@
 <script>
+    import {goto} from "$app/navigation";
     /** @type {import('./$types').PageData} */
     export let data;
     console.log(data.packages);
@@ -25,6 +26,12 @@
             packagesDiv.style.display = "none";
         }
     }
+
+    function open_package(event) {
+        if (event.key === "Enter" && results.length) {
+            goto(`/packages/${results[0].id}`);
+        }
+    }
 </script>
 
 <svelte:body on:click={checkOutside} />
@@ -39,7 +46,8 @@
             type="search"
             placeholder="Find a package"
             aria-label="Search"
-            on:input={search_packages} />
+            on:input={search_packages}
+            on:keydown={open_package} />
         <i class="bi bi-search search-icon text-muted"></i>
         <!-- display the search results -->
         <div class="mt-4 packages" bind:this={packagesDiv}>
