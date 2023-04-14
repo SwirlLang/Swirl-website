@@ -56,13 +56,13 @@
         </div>
         <div
             class="col-12 col-lg-6 d-flex text-center pt-3 pt-lg-0 align-items-start align-items-lg-center mt-3">
-            <div class="container-fluid" style="width: 500px">
+            <div class="container-fluid" style="width: 600px">
                 <img
                     src="swirl-demo.png"
-                    alt="demo code"
+                    alt="demo code of swirl"
                     class="img-fluid header-image"
-                    width="794"
-                    height="300"
+                    width="1064"
+                    height="540"
                     loading="lazy" />
             </div>
         </div>
@@ -86,7 +86,7 @@
                     performance. Sit back and enjoy the performance.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Know more <i class="bi bi-arrow-right-circle" /></a>
+                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-code-slash feature-icon d-inline-block" />
@@ -96,7 +96,7 @@
                     features like static typing, obejct oriented etc.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Know more <i class="bi bi-arrow-right-circle" /></a>
+                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-journal-text feature-icon d-inline-block" />
@@ -106,7 +106,7 @@
                     heavy lifting can be done by the standard library.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Know more <i class="bi bi-arrow-right-circle" /></a>
+                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-cpu feature-icon d-inline-block" />
@@ -116,7 +116,7 @@
                     So that you don't have to worry about it.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Know more <i class="bi bi-arrow-right-circle" /></a>
+                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-tools feature-icon d-inline-block" />
@@ -127,7 +127,7 @@
                     easier to maintain.
                 </p>
                 <a href="/docs" class="link-light"
-                    >Know more <i class="bi bi-arrow-right-circle" /></a>
+                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
                 <i class="bi bi-laptop feature-icon d-inline-block" />
@@ -137,7 +137,7 @@
                     on Windows, Linux, MacOS.
                 </p>
                 <a href="/download" class="link-light"
-                    >Know more <i class="bi bi-arrow-right-circle" /></a>
+                    >Learn more <i class="bi bi-arrow-right-circle" /></a>
             </div>
         </div>
     </div>
@@ -279,11 +279,5 @@
                 font-size: 1em;
             }
         }
-    }
-    .header-image {
-        border-radius: 1rem;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.281);
-        color: #2c2c2c;
-        border: 2px solid #4a00e0;
     }
 </style>

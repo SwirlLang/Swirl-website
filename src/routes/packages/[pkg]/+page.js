@@ -3,7 +3,7 @@ import { supabase } from "$lib/supabaseClient.js";
 
 async function getPackage(pkg) {
     const { data, error } = await supabase
-        .from("package")
+        .from("packages")
         .select("*")
         .eq("id", pkg);
     if (error) throw new Error(error.message);

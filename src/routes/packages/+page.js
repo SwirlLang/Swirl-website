@@ -1,7 +1,7 @@
 import { supabase } from "$lib/supabaseClient.js";
     
 async function getData() {
-    const { data, error } = await supabase.from("package").select("*");
+    const { data, error } = await supabase.from("packages").select("*");
     if (error) throw new Error(error.message);
 
     return data;

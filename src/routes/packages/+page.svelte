@@ -1,8 +1,12 @@
 <script>
     /** @type {import('./$types').PageData} */
     export let data;
+    console.log(data.packages);
     let results = [];
+    let packagesDiv;
+
     function search_packages(event) {
+        packagesDiv.style.display = "block";
         const query = event.target.value.toLowerCase();
         if (query) {
             results = data.packages.filter((pkg) => {
@@ -15,31 +19,47 @@
             results = [];
         }
     }
+
+    function checkOutside(event) {
+        if (!event.target.closest(".search-wrapper",)) {
+            packagesDiv.style.display = "none";
+        }
+    }
 </script>
+
+<svelte:body on:click={checkOutside} />
 
 <div class="spacer" />
 
 <div class="container px-4 px-md-6 text-center">
-    <h1 class="title mb-4">Swirl Packages</h1>
-    <div class="w-md-60 mx-auto">
+    <h1 class="title mb-4">Packages</h1>
+    <div class="w-md-60 mx-auto position-relative search-wrapper">
         <input
             class="form-control d-inline-block w-100 border-dark px-4 py-2 me-1 rounded-pill search-bar"
             type="search"
-            placeholder="Search"
+            placeholder="Find a package"
             aria-label="Search"
             on:input={search_packages} />
+        <i class="bi bi-search search-icon text-muted"></i>
         <!-- display the search results -->
-        <div class="mt-4 w-auto mx-auto text-start packages">
+        <div class="mt-4 packages" bind:this={packagesDiv}>
             {#each results as pkg}
-                <div class="package">
-                    <a href="/packages/{pkg.id}" class="link-light">
-                        <div>
-                            <p class="fw-bold mb-0">{pkg.id}</p>
-                            <p class="text-muted">{pkg.description}</p>
-                        </div>
-                        <p>{pkg.version}</p>
-                    </a>
-                </div>
+                <a
+                    href="/packages/{pkg.id}"
+                    class="link-light d-flex justify-content-between align-items-start">
+                    <div class="me-auto text-start">
+                        <p class="fw-bold mb-2">{pkg.name}</p>
+                        <p
+                            class="text-muted mb-0"
+                            style="display: -webkit-box;-webkit-line-clamp: 1;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;">
+                            {pkg.description}
+                        </p>
+                    </div>
+                    <span class="badge bg-primary px-2 rounded-pill"
+                        >{pkg.version}</span>
+                </a>
             {/each}
         </div>
     </div>
@@ -48,20 +68,10 @@
 <div class="spacer" />
 
 <style lang="scss">
-    @media screen and (min-width: 992px) {
-        .w-md-60 {
-            width: 60%;
-        }
-    }
     @media screen and (min-width: 768px) {
         .px-md-6 {
             padding-left: 7rem !important;
             padding-right: 7rem !important;
-        }
-    }
-    .search-bar {
-        &:focus {
-            box-shadow: 0px 0px 10px 5px rgba($color: $primary, $alpha: 0.6);
         }
     }
     .title {
@@ -70,23 +80,36 @@
             font-size: 3rem;
         }
     }
-    .packages {
-        max-height: 20rem;
-        overflow-y: scroll;
-        padding-inline: 0.3rem;
-        .package {
-            margin-bottom: 1rem;
-            border-radius: 1rem;
-            box-shadow: 0px 5px 0px 0px rgba($color: $primary, $alpha: 0.5);
-            transition: all 0.2s ease-in-out;
-            &:hover {
-                box-shadow: 0px 5px 0px 0px rgba($color: $primary, $alpha: 0.8);
+    .search-wrapper {
+        @media screen and (min-width: 992px) {        
+                width: 60%;
+        }
+        .search-bar {
+            padding-left: 3.5rem !important;
+            &:focus {
+                box-shadow: 0px 0px 0px 4px rgba($color: $primary, $alpha: 0.6);
             }
-            a {
-                padding: 1rem;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+        }
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 1.5rem;
+            transform: translateY(-50%);
+        }
+        .packages {
+            position: absolute;
+            max-height: 15rem;
+            overflow-y: auto;
+            width: 100%;
+            z-index: 1;
+            backdrop-filter: blur(5px);
+            border-radius: 1rem;
+            background-color: rgba(12,12,12, 0.849);
+            & > * {
+                padding: 10px 20px;
+                &:hover {
+                    background-color: rgba(37, 37, 37, 0.8);
+                }
             }
         }
     }

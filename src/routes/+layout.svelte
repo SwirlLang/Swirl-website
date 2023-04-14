@@ -108,6 +108,9 @@
                         <a href="/about" class="text-dark">About</a>
                     </li>
                     <li>
+                        <a href="/blog" class="text-dark">Blog</a>
+                    </li>
+                    <li>
                         <a href="/contact" class="text-dark">Contact</a>
                     </li>
                 </ul>
@@ -118,7 +121,7 @@
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="/download" class="text-dark">Download page</a>
+                        <a href="/download" class="text-dark">Downloads</a>
                     </li>
                     <li>
                         <a href="https://github.com/SwirlLang/Swirl/releases" class="text-dark">GitHub Releases</a>
