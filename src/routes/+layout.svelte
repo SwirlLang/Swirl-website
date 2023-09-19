@@ -30,9 +30,6 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ms-auto me-3 text-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
@@ -104,9 +101,6 @@
                 <hr class="header-sep" />
 
                 <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="/about" class="text-dark">About</a>
-                    </li>
                     <li>
                         <a href="/blog" class="text-dark">Blog</a>
                     </li>
