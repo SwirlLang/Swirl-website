@@ -8,7 +8,7 @@ Repository of Swirl Lang website
         height="35px" />
 </a>
 
-## Running the website
+## Run the website
 
 first install required dependencies:
 
