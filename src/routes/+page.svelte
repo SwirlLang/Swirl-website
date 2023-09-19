@@ -34,10 +34,10 @@
         <div
             class="col-12 col-lg-6 d-flex align-items-end align-items-lg-center">
             <div class="header container-fluid">
-                <a href="/blog/swirl-alpha" class="news-alert mb-2"
-                    ><span>Swirl alpha is here</span>
+                <a href="https://github.com/SwirlLang/Swirl/releases/tag/v0.0.5-alpha" class="news-alert mb-2"
+                    ><span>Swirl v0.0.5</span>
                     <span
-                        ><span>Read the announcement</span>
+                        ><span>Download link</span>
                         <i class="bi bi-chevron-right" /></span
                     ></a>
                 <h1 class="header-feature-icon">
