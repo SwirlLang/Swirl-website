@@ -173,8 +173,7 @@
             by
             <a class="text-white" href="https://github.com/mrinmoyhaloi"
                 >Mrinmoy Haloi</a>
-            <br />
-            Thanks to Vercel for sponsoring the project
+
             <a
                 style="width: fit-content;"
                 class="mt-2 d-block mx-auto mx-md-0"

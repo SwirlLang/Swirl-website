@@ -80,7 +80,7 @@
         </p>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-6">
             <h3 class="mb-3"><i class="bi bi-vs" /> Visual Studio Code</h3>
             <a
                 target="_blank"

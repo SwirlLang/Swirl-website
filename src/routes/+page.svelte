@@ -93,7 +93,7 @@
                 <h3>Syntax</h3>
                 <p>
                     Develop faster with a clean and concise syntax. Enjoy the
-                    features like static typing, obejct oriented etc.
+                    features like static typing, object oriented etc.
                 </p>
                 <a href="/docs" class="link-light"
                     >Learn more <i class="bi bi-arrow-right-circle" /></a>
