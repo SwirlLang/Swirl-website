@@ -82,8 +82,7 @@
                 <i class="bi bi-lightning-charge feature-icon d-inline-block" />
                 <h3>Performance</h3>
                 <p>
-                    Swirl compiles to C++, never letting you down on
-                    performance. Sit back and enjoy the performance.
+LLVM based compiler backend, compiles to native machine code.
                 </p>
                 <a href="/docs" class="link-light"
                     >Learn more <i class="bi bi-arrow-right-circle" /></a>
@@ -92,8 +91,7 @@
                 <i class="bi bi-code-slash feature-icon d-inline-block" />
                 <h3>Syntax</h3>
                 <p>
-                    Develop faster with a clean and concise syntax. Enjoy the
-                    features like static typing, object oriented etc.
+                    Emphasizes an elegant, clean and concise syntax.
                 </p>
                 <a href="/docs" class="link-light"
                     >Learn more <i class="bi bi-arrow-right-circle" /></a>
@@ -102,18 +100,16 @@
                 <i class="bi bi-journal-text feature-icon d-inline-block" />
                 <h3>Std Lib</h3>
                 <p>
-                    Enjoy the diversity of the standard library. Most of the
-                    heavy lifting can be done by the standard library.
+                    A diverse standard library to ease your tasks.
                 </p>
                 <a href="/docs" class="link-light"
                     >Learn more <i class="bi bi-arrow-right-circle" /></a>
             </div>
             <div class="feature">
-                <i class="bi bi-cpu feature-icon d-inline-block" />
-                <h3>Memory Safe</h3>
+                <i class="bi bi-git feature-icon d-inline-block" />
+                <h3>Open Source</h3>
                 <p>
-                    Write code comfortably, Swirl takes care of memory for you.
-                    So that you don't have to worry about it.
+                    An open source language developed by developers for developers.
                 </p>
                 <a href="/docs" class="link-light"
                     >Learn more <i class="bi bi-arrow-right-circle" /></a>
@@ -122,9 +118,7 @@
                 <i class="bi bi-tools feature-icon d-inline-block" />
                 <h3>Reliable</h3>
                 <p>
-                    Swirl is a compiled language, with the features like static typing,
-                    readable syntax resulting in less bugs. Making it reliable and
-                    easier to maintain.
+                    Enforces static typing and null safety for a more maintainable and more bug resistant code base.
                 </p>
                 <a href="/docs" class="link-light"
                     >Learn more <i class="bi bi-arrow-right-circle" /></a>

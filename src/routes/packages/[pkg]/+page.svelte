@@ -11,7 +11,7 @@
         numeric: "auto",
     });
     const diff = new Date() - new Date(pkg.updated_at);
-    const updated_at = formatter.format(Math.round(diff / 1000 / 60 / 60 / 24), "day");
+    const updated_at = formatter.format(-Math.round(diff / 1000 / 60 / 60 / 24), "day");
 
 </script>
 
@@ -36,7 +36,7 @@
         </div>
         <div class="mt-lg-0 mt-3">
             <span class="fs-6 fw-bold">Metadata</span>
-            <div class="other-info d-flex gap-3 mt-1">
+            <div class="other-info d-flex flex-wrap column-gap-3 mt-2">
                 <div class="d-flex gap-2">
                     <i class="bi bi-journal-text" />
                     <p class="text-muted" style="font-size: .95rem">
