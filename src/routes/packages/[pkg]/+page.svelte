@@ -21,10 +21,12 @@
     <div
         class="metadata d-flex justify-content-between flex-lg-row flex-column">
         <div>
-            <h1 class="fs-3 fw-bold">
+            <div class="d-flex flex-wrap column-gap-2 mb-2">
+            <h1 class="fs-3 fw-bold m-0">
                 {pkg.name}
-                <span class="text-muted fs-5 ms-2">v{pkg.version}</span>
             </h1>
+            <span class="fs-5 fw-bold text-muted">v{pkg.version}</span>
+            </div>
             <p class="text-muted mb-1">{pkg.author}</p>
             <div class="tags d-flex gap-2 mb-2">
                 {#each pkg.tags as tag}
@@ -48,10 +50,6 @@
                     <p class="text-muted" style="font-size: .95rem">
                         {updated_at}
                     </p>
-                </div>
-                <div class="d-flex gap-2">
-                    <i class="bi bi-archive" />
-                    <p class="text-muted" style="font-size: .95rem">312kb</p>
                 </div>
                 <div class="d-flex gap-2">
                     <i class="bi bi-house" />
