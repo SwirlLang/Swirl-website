@@ -24,8 +24,8 @@
     <h3 class="text-muted">Swirl {data.release.name}</h3>
     <p>Download Swirl for your operating system</p>
     <div
-        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3"
-        style="row-gap: 1.4rem">
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5"
+        style="row-gap: 2.4rem">
         <!-- <div class="col">
             <h3 class="mb-3"><img src="/linux.svg" alt="Linux icon" style="width: 25px"> Linux</h3>
             <div class="btn-group w-100" style="gap: .2em">
@@ -65,7 +65,7 @@
                 </div>
         </div>
     </div>
-    <div class="mt-3 mb-4">
+    <div class="mt-4 mb-4">
         <p>
             <i class="bi bi-box-arrow-up-right" />
             <a class="link-light" href="/docs/getting-started/installation"
@@ -81,13 +81,13 @@
     </div>
     <div class="row">
         <div class="col-12 col-md-6">
-            <h3 class="mb-3"><i class="bi bi-vs" /> Visual Studio Code</h3>
+            <h3 class="mb-3"><i class="bi bi-vs" /> Language tools</h3>
             <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://marketplace.visualstudio.com/items?itemName=MrinmoyHaloi.swirl-lang-support"
                 class="text-light download-btn"
-                ><i class="bi bi-download me-2" /> Swirl extension</a>
+                ><i class="bi bi-download me-2" /> VSCode extension</a>
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<script>
+<script>  
     import { onMount } from "svelte";
     onMount(() => {
         gsap.to(".header-image", {
@@ -37,7 +37,7 @@
                 <a href="https://github.com/SwirlLang/Swirl/releases/tag/v0.0.5-alpha" class="news-alert mb-2"
                     ><span>Swirl v0.0.5</span>
                     <span
-                        ><span>Download link</span>
+                        ><span>View release</span>
                         <i class="bi bi-chevron-right" /></span
                     ></a>
                 <h1 class="header-feature-icon">
@@ -75,7 +75,7 @@
     </a>
 </div>
 <div class="container" id="content">
-    <div class="" style="padding: 3rem 0rem;">
+    <div id style="padding: 3rem 0rem;">
         <h2 class="text-center fs-1">Why Swirl</h2>
         <div class="features-grid">
             <div class="feature">
