@@ -1,20 +1,25 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "github": {
-    "silent": true
-  },
-  "rewrites": [
-      {
-          "source": "/docs/:match*",
-          "destination": "https://swirl-docs.vercel.app/docs/:match*"
-      },
-      {
-          "source": "/blog/:match*",
-          "destination": "https://swirl-docs.vercel.app/blog/:match*"
-      },
-      {
-          "source": "/assets/:match*",
-          "destination": "https://swirl-docs.vercel.app/assets/:match*"
-      }
-  ]
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "rewrites": [
+        {
+            "source": "/docs",
+            "destination": "https://swirl-docs.vercel.app/docs"
+        },
+        {
+            "source": "/docs/:match*",
+            "destination": "https://swirl-docs.vercel.app/docs/:match*"
+        },
+        {
+            "source": "/docs/:match*/",
+            "destination": "https://swirl-docs.vercel.app/docs/:match*"
+        },
+        {
+            "source": "/blog/:match*",
+            "destination": "https://swirl-docs.vercel.app/blog/:match*"
+        },
+        {
+            "source": "/assets/:match*",
+            "destination": "https://swirl-docs.vercel.app/assets/:match*"
+        }
+    ]
 }
