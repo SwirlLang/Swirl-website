@@ -174,16 +174,6 @@
             <a class="text-white" href="https://github.com/mrinmoyhaloi"
                 >Mrinmoy Haloi</a>
 
-            <a
-                style="width: fit-content;"
-                class="mt-2 d-block mx-auto mx-md-0"
-                href="https://vercel.com/?utm_source=swirl-team&utm_campaign=oss">
-                <img
-                    alt="Powered by Vercel"
-                    src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-                    width="154"
-                    height="32"
-                    loading="lazy" /></a>
         </div>
     </div>
     <!-- Copyright -->

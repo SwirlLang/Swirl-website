@@ -1,13 +1,6 @@
 # Swirl Lang website
 Repository of Swirl Lang website
 
-<a class="mt-2 d-block" href="https://vercel.com/?utm_source=swirl-team&utm_campaign=oss">
-    <img
-        alt="Powered by Vercel"
-        src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-        height="35px" />
-</a>
-
 ## Run the website
 
 first install required dependencies:
